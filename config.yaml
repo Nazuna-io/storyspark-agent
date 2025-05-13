@@ -1,0 +1,40 @@
+# config.yaml
+
+# Sources to monitor
+sources:
+  rss_feeds: [] # Explicitly an empty list
+    # Example: uncomment and replace with a real feed URL
+    # - url: "https://feeds.bbci.co.uk/news/rss.xml"
+  subreddits: # Public subreddits (uses .json endpoint)
+    - name: "futurology" # Example: futurology
+    # - name: "technology"
+
+# Trend Detection Parameters
+trend_detection:
+  history_window_days: 24       # How many days of recent history to compare against (Renamed from lookback_hours)
+  frequency_threshold: 3   # How many times more frequent a keyword must be to be a 'spike'
+  min_keyword_frequency: 2 # Minimum times a keyword must appear in the new batch to be considered
+  # Basic list, consider expanding or using a library later
+  stopwords: ["the", "a", "is", "in", "it", "and", "to", "of", "on", "for", "with", "as", "by", "at", "an", "this", "that", "be", "which", "or", "but", "not", "are", "from", "was", "we", "i", "you", "he", "she", "they", "has", "have", "had", "will", "can", "its", "about", "if", "up", "out", "so", "what", "when", "where", "who", "how", "why", "new", "post", "posts", "comment", "comments", "link", "url", "http", "https", "www", "reddit", "com", "org", "net", "co", "uk", "us", "ai", "llm", "news"]
+
+# Story Seed Generation (LLM) Parameters
+generation:
+  gemini_model: "gemini-2.0-flash" # Or other suitable model
+  prompt_template: |
+    Detected Spark: "{spark_keyword}" from source "{source_name}".
+    Based on this spark, generate a compelling story seed including:
+    1. Logline: A one-sentence summary of a potential story.
+    2. What If Questions (3): Intriguing questions raised by the spark.
+    3. Thematic Keywords (3): Core themes suggested by the spark.
+    Format the output clearly under these headings. Make the Logline concise and intriguing.
+
+# Logging Parameters
+logging:
+  output_file: "story_sparks.md"
+  log_file: "agent.log" # Added for operational logging
+  log_level: "DEBUG" # e.g., DEBUG, INFO, WARNING, ERROR
+
+# Agent Parameters (Renamed from scheduler)
+agent:
+  schedule_interval_minutes: 60 # Check sources every hour (Renamed from run_interval_minutes)
+  max_sparks_per_cycle: 3      # Limit the number of sparks to generate seeds for in one cycle

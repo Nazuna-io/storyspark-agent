@@ -1,0 +1,601 @@
+2025-05-13 05:28:06,173 - tests.test_logger_config - INFO - Info message
+2025-05-13 05:28:06,188 - test.module - INFO - Test message
+2025-05-13 05:28:06,194 - src.main - INFO - Creating data directory: data
+2025-05-13 05:28:06,198 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 05:28:06,199 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-10/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 05:28:06,200 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-10/test_save_seeds_empty0/test_sparks.md
+2025-05-13 05:28:06,201 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-10/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 05:28:06,202 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-10/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 05:28:06,203 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:28:06,203 - src.main - INFO - Fetching new items...
+2025-05-13 05:28:06,203 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 05:28:06,203 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 05:28:06,205 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:28:06,205 - src.main - INFO - Fetching new items...
+2025-05-13 05:28:06,205 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:28:06,205 - src.main - INFO - Detecting sparks...
+2025-05-13 05:28:06,205 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 05:28:06,205 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 05:28:06,206 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:28:06,206 - src.main - INFO - Fetching new items...
+2025-05-13 05:28:06,206 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:28:06,206 - src.main - INFO - Detecting sparks...
+2025-05-13 05:28:06,206 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 05:28:06,207 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 05:28:06,207 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 05:28:06,207 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 05:28:06,207 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 05:28:06,208 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:28:06,208 - src.main - INFO - Fetching new items...
+2025-05-13 05:28:06,208 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:28:06,208 - src.main - INFO - Detecting sparks...
+2025-05-13 05:28:06,208 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 05:28:06,208 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 05:28:06,208 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 05:28:06,209 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 05:28:06,209 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 05:28:06,210 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:28:06,210 - src.main - INFO - Fetching new items...
+2025-05-13 05:28:06,210 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 05:28:06,210 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:28:06,210 - src.main - INFO - Detecting sparks...
+2025-05-13 05:28:06,210 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 05:28:06,210 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 05:28:06,211 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:28:06,211 - src.main - INFO - Fetching new items...
+2025-05-13 05:28:06,211 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:28:06,212 - src.main - INFO - Detecting sparks...
+2025-05-13 05:28:06,212 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 05:28:06,212 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 05:28:06,212 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 05:28:06,212 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 05:28:06,215 - src.story_seed_generator - INFO - Google Generative AI client configured successfully.
+2025-05-13 05:28:06,217 - src.story_seed_generator - INFO - Google Generative AI client configured successfully.
+2025-05-13 05:28:06,224 - src.story_seed_generator - INFO - Successfully parsed LLM response into logline, questions, and keywords.
+2025-05-13 05:28:06,225 - src.story_seed_generator - INFO - Successfully parsed LLM response into logline, questions, and keywords.
+2025-05-13 05:28:06,234 - src.story_seed_generator - WARNING - Could not parse 'What If Questions' from LLM response.
+Response snippet:
+
+        Logline: A story about time travel.
+        
+        What If Questions:
+        - What if time travel was real?
+        ...
+2025-05-13 05:28:06,235 - src.story_seed_generator - WARNING - Received empty text from Gemini response for parsing.
+2025-05-13 05:28:06,236 - src.story_seed_generator - WARNING - Could not parse Logline from LLM response.
+Response snippet:
+This is not a properly formatted response...
+2025-05-13 05:28:06,239 - src.story_seed_generator - INFO - Generating story seed for spark: 'quantum' from 'test_source' using model 'gemini-1.5-flash-latest'
+2025-05-13 05:28:06,239 - src.story_seed_generator - INFO - Successfully parsed LLM response into logline, questions, and keywords.
+2025-05-13 05:28:06,239 - src.story_seed_generator - INFO - Successfully generated and parsed story seed for spark: 'quantum'
+2025-05-13 05:28:06,240 - src.story_seed_generator - INFO - Attempting to configure Gemini API before generation...
+2025-05-13 05:28:06,240 - src.story_seed_generator - ERROR - Gemini client not configured and configuration attempt failed. Cannot generate seed.
+2025-05-13 05:28:06,242 - src.story_seed_generator - INFO - Generating story seed for spark: 'quantum' from 'test_source' using model 'gemini-1.5-flash-latest'
+2025-05-13 05:28:06,242 - src.story_seed_generator - ERROR - Error during Gemini API call (attempt 1/3) for spark 'quantum': API Error
+Traceback (most recent call last):
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+Exception: API Error
+2025-05-13 05:28:06,242 - src.story_seed_generator - INFO - Retrying Gemini request after error (attempt 2/3) after 1 seconds...
+2025-05-13 05:28:07,243 - src.story_seed_generator - ERROR - Error during Gemini API call (attempt 2/3) for spark 'quantum': API Error
+Traceback (most recent call last):
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+Exception: API Error
+2025-05-13 05:28:07,244 - src.story_seed_generator - INFO - Retrying Gemini request after error (attempt 3/3) after 2 seconds...
+2025-05-13 05:28:09,245 - src.story_seed_generator - ERROR - Error during Gemini API call (attempt 3/3) for spark 'quantum': API Error
+Traceback (most recent call last):
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+Exception: API Error
+2025-05-13 05:28:09,246 - src.story_seed_generator - ERROR - Failed to generate story seed after 3 attempts due to API errors.
+2025-05-13 05:28:09,248 - src.story_seed_generator - INFO - Generating story seed for spark: 'quantum' from 'test_source' using model 'gemini-1.5-flash-latest'
+2025-05-13 05:28:09,248 - src.story_seed_generator - WARNING - Gemini API returned no text content for spark 'quantum' (Attempt 1/3). Finish Reason: SAFETY, Block Reason: None, Safety Ratings: <Mock name='mock.safety_ratings' id='140093191167216'>
+2025-05-13 05:28:09,248 - src.story_seed_generator - WARNING - Generation stopped due to safety/recitation (SAFETY). No retry.
+2025-05-13 05:28:09,249 - src.story_seed_generator - ERROR - Prompt template 'generation.prompt_template' is missing in the configuration.
+2025-05-13 05:28:09,254 - src.trend_detector - INFO - Analyzing 3 new items against 2 history items for sparks.
+2025-05-13 05:28:09,254 - src.trend_detector - INFO - Detected Spark: 'quantum' from source 'Unknown Source' (New Freq: 2, Hist Freq: 0) - Assoc. item: Another Quantum Development
+2025-05-13 05:28:09,254 - src.trend_detector - INFO - Detected 1 sparks in this cycle.
+2025-05-13 05:28:09,257 - src.trend_detector - INFO - Analyzing 1 new items against 1 history items for sparks.
+2025-05-13 05:28:09,257 - src.trend_detector - INFO - Detected 0 sparks in this cycle.
+2025-05-13 05:28:09,258 - src.trend_detector - INFO - Analyzing 2 new items against 0 history items for sparks.
+2025-05-13 05:28:09,258 - src.trend_detector - INFO - Detected Spark: 'unique' from source 'Unknown Source' (New Freq: 2, Hist Freq: 0) - Assoc. item: Another Unique Topic
+2025-05-13 05:28:09,258 - src.trend_detector - INFO - Detected 1 sparks in this cycle.
+2025-05-13 05:28:09,262 - src.trend_detector - INFO - No new items to analyze for sparks.
+2025-05-13 05:28:09,262 - src.trend_detector - INFO - No new items to analyze for sparks.
+2025-05-13 05:28:09,263 - src.trend_detector - INFO - Analyzing 2 new items against 0 history items for sparks.
+2025-05-13 05:28:09,263 - src.trend_detector - INFO - Detected Spark: 'blockchain' from source 'Unknown Source' (New Freq: 2, Hist Freq: 0) - Assoc. item: Blockchain Revolution
+2025-05-13 05:28:09,263 - src.trend_detector - INFO - Detected 1 sparks in this cycle.
+2025-05-13 05:33:45,132 - test.module - INFO - Test message
+2025-05-13 05:33:45,136 - src.main - INFO - Creating data directory: data
+2025-05-13 05:33:45,140 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 05:33:45,141 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-11/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 05:33:45,142 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-11/test_save_seeds_empty0/test_sparks.md
+2025-05-13 05:33:45,143 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-11/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 05:33:45,144 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-11/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 05:33:45,145 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:33:45,145 - src.main - INFO - Fetching new items...
+2025-05-13 05:33:45,145 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 05:33:45,146 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 05:33:45,147 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:33:45,147 - src.main - INFO - Fetching new items...
+2025-05-13 05:33:45,147 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:33:45,147 - src.main - INFO - Detecting sparks...
+2025-05-13 05:33:45,147 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 05:33:45,147 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 05:33:45,149 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:33:45,149 - src.main - INFO - Fetching new items...
+2025-05-13 05:33:45,149 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:33:45,149 - src.main - INFO - Detecting sparks...
+2025-05-13 05:33:45,149 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 05:33:45,149 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 05:33:45,149 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 05:33:45,149 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 05:33:45,149 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 05:33:45,150 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:33:45,151 - src.main - INFO - Fetching new items...
+2025-05-13 05:33:45,151 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:33:45,151 - src.main - INFO - Detecting sparks...
+2025-05-13 05:33:45,151 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 05:33:45,151 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 05:33:45,151 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 05:33:45,151 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 05:33:45,151 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 05:33:45,152 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:33:45,152 - src.main - INFO - Fetching new items...
+2025-05-13 05:33:45,152 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 05:33:45,152 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:33:45,152 - src.main - INFO - Detecting sparks...
+2025-05-13 05:33:45,152 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 05:33:45,152 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 05:33:45,154 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:33:45,154 - src.main - INFO - Fetching new items...
+2025-05-13 05:33:45,154 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:33:45,154 - src.main - INFO - Detecting sparks...
+2025-05-13 05:33:45,154 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 05:33:45,154 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 05:33:45,154 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 05:33:45,154 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 05:33:45,157 - src.story_seed_generator - INFO - Google Generative AI client configured successfully.
+2025-05-13 05:33:45,159 - src.story_seed_generator - ERROR - GOOGLE_API_KEY environment variable not set or found in .env file.
+2025-05-13 05:33:45,162 - src.story_seed_generator - INFO - Successfully parsed LLM response into logline, questions, and keywords.
+2025-05-13 05:33:45,163 - src.story_seed_generator - INFO - Successfully parsed LLM response into logline, questions, and keywords.
+2025-05-13 05:33:45,173 - src.story_seed_generator - WARNING - Could not parse 'What If Questions' from LLM response.
+Response snippet:
+
+        Logline: A story about time travel.
+        
+        What If Questions:
+        - What if time travel was real?
+        ...
+2025-05-13 05:33:45,174 - src.story_seed_generator - WARNING - Received empty text from Gemini response for parsing.
+2025-05-13 05:33:45,174 - src.story_seed_generator - WARNING - Could not parse Logline from LLM response.
+Response snippet:
+This is not a properly formatted response...
+2025-05-13 05:33:45,178 - src.story_seed_generator - INFO - Generating story seed for spark: 'quantum' from 'test_source' using model 'gemini-1.5-flash-latest'
+2025-05-13 05:33:45,178 - src.story_seed_generator - INFO - Successfully parsed LLM response into logline, questions, and keywords.
+2025-05-13 05:33:45,178 - src.story_seed_generator - INFO - Successfully generated and parsed story seed for spark: 'quantum'
+2025-05-13 05:33:45,179 - src.story_seed_generator - INFO - Attempting to configure Gemini API before generation...
+2025-05-13 05:33:45,179 - src.story_seed_generator - ERROR - Gemini client not configured and configuration attempt failed. Cannot generate seed.
+2025-05-13 05:33:45,180 - src.story_seed_generator - INFO - Generating story seed for spark: 'quantum' from 'test_source' using model 'gemini-1.5-flash-latest'
+2025-05-13 05:33:45,181 - src.story_seed_generator - ERROR - Error during Gemini API call (attempt 1/3) for spark 'quantum': API Error
+Traceback (most recent call last):
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+Exception: API Error
+2025-05-13 05:33:45,181 - src.story_seed_generator - INFO - Retrying Gemini request after error (attempt 2/3) after 1 seconds...
+2025-05-13 05:33:46,181 - src.story_seed_generator - ERROR - Error during Gemini API call (attempt 2/3) for spark 'quantum': API Error
+Traceback (most recent call last):
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+Exception: API Error
+2025-05-13 05:33:46,182 - src.story_seed_generator - INFO - Retrying Gemini request after error (attempt 3/3) after 2 seconds...
+2025-05-13 05:33:48,184 - src.story_seed_generator - ERROR - Error during Gemini API call (attempt 3/3) for spark 'quantum': API Error
+Traceback (most recent call last):
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+Exception: API Error
+2025-05-13 05:33:48,185 - src.story_seed_generator - ERROR - Failed to generate story seed after 3 attempts due to API errors.
+2025-05-13 05:33:48,187 - src.story_seed_generator - INFO - Generating story seed for spark: 'quantum' from 'test_source' using model 'gemini-1.5-flash-latest'
+2025-05-13 05:33:48,188 - src.story_seed_generator - WARNING - Gemini API returned no text content for spark 'quantum' (Attempt 1/3). Finish Reason: SAFETY, Block Reason: None, Safety Ratings: <Mock name='mock.safety_ratings' id='139809249037808'>
+2025-05-13 05:33:48,188 - src.story_seed_generator - WARNING - Generation stopped due to safety/recitation (SAFETY). No retry.
+2025-05-13 05:33:48,188 - src.story_seed_generator - ERROR - Prompt template 'generation.prompt_template' is missing in the configuration.
+2025-05-13 05:33:48,191 - src.trend_detector - INFO - Analyzing 3 new items against 2 history items for sparks.
+2025-05-13 05:33:48,191 - src.trend_detector - INFO - Detected Spark: 'quantum' from source 'Unknown Source' (New Freq: 2, Hist Freq: 0) - Assoc. item: Another Quantum Development
+2025-05-13 05:33:48,191 - src.trend_detector - INFO - Detected 1 sparks in this cycle.
+2025-05-13 05:33:48,195 - src.trend_detector - INFO - Analyzing 1 new items against 1 history items for sparks.
+2025-05-13 05:33:48,195 - src.trend_detector - INFO - Detected 0 sparks in this cycle.
+2025-05-13 05:33:48,195 - src.trend_detector - INFO - Analyzing 2 new items against 0 history items for sparks.
+2025-05-13 05:33:48,195 - src.trend_detector - INFO - Detected Spark: 'unique' from source 'Unknown Source' (New Freq: 2, Hist Freq: 0) - Assoc. item: Another Unique Topic
+2025-05-13 05:33:48,195 - src.trend_detector - INFO - Detected 1 sparks in this cycle.
+2025-05-13 05:33:48,196 - src.trend_detector - INFO - No new items to analyze for sparks.
+2025-05-13 05:33:48,196 - src.trend_detector - INFO - No new items to analyze for sparks.
+2025-05-13 05:33:48,197 - src.trend_detector - INFO - Analyzing 2 new items against 0 history items for sparks.
+2025-05-13 05:33:48,197 - src.trend_detector - INFO - Detected Spark: 'blockchain' from source 'Unknown Source' (New Freq: 2, Hist Freq: 0) - Assoc. item: Blockchain Revolution
+2025-05-13 05:33:48,197 - src.trend_detector - INFO - Detected 1 sparks in this cycle.
+2025-05-13 05:36:48,488 - test.module - INFO - Test message
+2025-05-13 05:36:48,491 - src.main - INFO - Creating data directory: data
+2025-05-13 05:36:48,495 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 05:36:48,496 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-13/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 05:36:48,497 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-13/test_save_seeds_empty0/test_sparks.md
+2025-05-13 05:36:48,498 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-13/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 05:36:48,499 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-13/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 05:36:48,500 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:36:48,500 - src.main - INFO - Fetching new items...
+2025-05-13 05:36:48,500 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 05:36:48,500 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 05:36:48,502 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:36:48,502 - src.main - INFO - Fetching new items...
+2025-05-13 05:36:48,502 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:36:48,502 - src.main - INFO - Detecting sparks...
+2025-05-13 05:36:48,502 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 05:36:48,502 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 05:36:48,503 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:36:48,503 - src.main - INFO - Fetching new items...
+2025-05-13 05:36:48,503 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:36:48,503 - src.main - INFO - Detecting sparks...
+2025-05-13 05:36:48,503 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 05:36:48,504 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 05:36:48,504 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 05:36:48,504 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 05:36:48,504 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 05:36:48,505 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:36:48,505 - src.main - INFO - Fetching new items...
+2025-05-13 05:36:48,505 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:36:48,505 - src.main - INFO - Detecting sparks...
+2025-05-13 05:36:48,505 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 05:36:48,505 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 05:36:48,505 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 05:36:48,505 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 05:36:48,505 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 05:36:48,507 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:36:48,507 - src.main - INFO - Fetching new items...
+2025-05-13 05:36:48,507 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 05:36:48,507 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:36:48,507 - src.main - INFO - Detecting sparks...
+2025-05-13 05:36:48,507 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 05:36:48,507 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 05:36:48,508 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:36:48,508 - src.main - INFO - Fetching new items...
+2025-05-13 05:36:48,509 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:36:48,509 - src.main - INFO - Detecting sparks...
+2025-05-13 05:36:48,509 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 05:36:48,509 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 05:36:48,509 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 05:36:48,509 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 05:36:48,512 - src.story_seed_generator - INFO - Google Generative AI client configured successfully.
+2025-05-13 05:36:48,513 - src.story_seed_generator - ERROR - GOOGLE_API_KEY environment variable not set or found in .env file.
+2025-05-13 05:36:48,516 - src.story_seed_generator - INFO - Successfully parsed LLM response into logline, questions, and keywords.
+2025-05-13 05:36:48,517 - src.story_seed_generator - INFO - Successfully parsed LLM response into logline, questions, and keywords.
+2025-05-13 05:36:48,526 - src.story_seed_generator - WARNING - Could not parse 'What If Questions' from LLM response.
+Response snippet:
+
+        Logline: A story about time travel.
+        
+        What If Questions:
+        - What if time travel was real?
+        ...
+2025-05-13 05:36:48,527 - src.story_seed_generator - WARNING - Received empty text from Gemini response for parsing.
+2025-05-13 05:36:48,528 - src.story_seed_generator - WARNING - Could not parse Logline from LLM response.
+Response snippet:
+This is not a properly formatted response...
+2025-05-13 05:36:48,531 - src.story_seed_generator - INFO - Generating story seed for spark: 'quantum' from 'test_source' using model 'gemini-1.5-flash-latest'
+2025-05-13 05:36:48,531 - src.story_seed_generator - INFO - Successfully parsed LLM response into logline, questions, and keywords.
+2025-05-13 05:36:48,531 - src.story_seed_generator - INFO - Successfully generated and parsed story seed for spark: 'quantum'
+2025-05-13 05:36:48,532 - src.story_seed_generator - INFO - Attempting to configure Gemini API before generation...
+2025-05-13 05:36:48,532 - src.story_seed_generator - ERROR - Gemini client not configured and configuration attempt failed. Cannot generate seed.
+2025-05-13 05:36:48,534 - src.story_seed_generator - INFO - Generating story seed for spark: 'quantum' from 'test_source' using model 'gemini-1.5-flash-latest'
+2025-05-13 05:36:48,534 - src.story_seed_generator - ERROR - Error during Gemini API call (attempt 1/3) for spark 'quantum': API Error
+Traceback (most recent call last):
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+Exception: API Error
+2025-05-13 05:36:48,534 - src.story_seed_generator - INFO - Retrying Gemini request after error (attempt 2/3) after 1 seconds...
+2025-05-13 05:36:49,535 - src.story_seed_generator - ERROR - Error during Gemini API call (attempt 2/3) for spark 'quantum': API Error
+Traceback (most recent call last):
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+Exception: API Error
+2025-05-13 05:36:49,536 - src.story_seed_generator - INFO - Retrying Gemini request after error (attempt 3/3) after 2 seconds...
+2025-05-13 05:36:51,538 - src.story_seed_generator - ERROR - Error during Gemini API call (attempt 3/3) for spark 'quantum': API Error
+Traceback (most recent call last):
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+Exception: API Error
+2025-05-13 05:36:51,539 - src.story_seed_generator - ERROR - Failed to generate story seed after 3 attempts due to API errors.
+2025-05-13 05:36:51,541 - src.story_seed_generator - INFO - Generating story seed for spark: 'quantum' from 'test_source' using model 'gemini-1.5-flash-latest'
+2025-05-13 05:36:51,541 - src.story_seed_generator - WARNING - Gemini API returned no text content for spark 'quantum' (Attempt 1/3). Finish Reason: SAFETY, Block Reason: None, Safety Ratings: <Mock name='mock.safety_ratings' id='140264546886720'>
+2025-05-13 05:36:51,541 - src.story_seed_generator - WARNING - Generation stopped due to safety/recitation (SAFETY). No retry.
+2025-05-13 05:36:51,542 - src.story_seed_generator - ERROR - Prompt template 'generation.prompt_template' is missing in the configuration.
+2025-05-13 05:36:51,544 - src.trend_detector - INFO - Analyzing 3 new items against 2 history items for sparks.
+2025-05-13 05:36:51,545 - src.trend_detector - INFO - Detected Spark: 'computing' from source 'test_source' (New Freq: 2, Hist Freq: 0) - Assoc. item: Quantum Computing Breakthrough Announced
+2025-05-13 05:36:51,545 - src.trend_detector - INFO - Detected Spark: 'quantum' from source 'test_source' (New Freq: 4, Hist Freq: 0) - Assoc. item: Another Quantum Development
+2025-05-13 05:36:51,545 - src.trend_detector - INFO - Detected 2 sparks in this cycle.
+2025-05-13 05:36:51,545 - src.trend_detector - INFO - Analyzing 1 new items against 1 history items for sparks.
+2025-05-13 05:36:51,545 - src.trend_detector - INFO - Detected 0 sparks in this cycle.
+2025-05-13 05:36:51,546 - src.trend_detector - INFO - Analyzing 2 new items against 0 history items for sparks.
+2025-05-13 05:36:51,546 - src.trend_detector - INFO - Detected Spark: 'different' from source 'test_source' (New Freq: 2, Hist Freq: 0) - Assoc. item: Another Unique Topic
+2025-05-13 05:36:51,546 - src.trend_detector - INFO - Detected Spark: 'unique' from source 'test_source' (New Freq: 2, Hist Freq: 0) - Assoc. item: Another Unique Topic
+2025-05-13 05:36:51,546 - src.trend_detector - INFO - Detected 2 sparks in this cycle.
+2025-05-13 05:36:51,547 - src.trend_detector - INFO - No new items to analyze for sparks.
+2025-05-13 05:36:51,547 - src.trend_detector - INFO - No new items to analyze for sparks.
+2025-05-13 05:36:51,547 - src.trend_detector - INFO - Analyzing 2 new items against 0 history items for sparks.
+2025-05-13 05:36:51,548 - src.trend_detector - INFO - Detected Spark: 'blockchain' from source 'source2' (New Freq: 4, Hist Freq: 0) - Assoc. item: Blockchain Revolution
+2025-05-13 05:36:51,548 - src.trend_detector - INFO - Detected 1 sparks in this cycle.
+2025-05-13 05:39:21,781 - test.module - INFO - Test message
+2025-05-13 05:39:21,784 - src.main - INFO - Creating data directory: data
+2025-05-13 05:39:21,788 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 05:39:21,788 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-14/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 05:39:21,789 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-14/test_save_seeds_empty0/test_sparks.md
+2025-05-13 05:39:21,790 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-14/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 05:39:21,791 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-14/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 05:39:21,793 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:39:21,793 - src.main - INFO - Fetching new items...
+2025-05-13 05:39:21,793 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 05:39:21,793 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 05:39:21,795 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:39:21,795 - src.main - INFO - Fetching new items...
+2025-05-13 05:39:21,795 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:39:21,795 - src.main - INFO - Detecting sparks...
+2025-05-13 05:39:21,795 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 05:39:21,795 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 05:39:21,796 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:39:21,797 - src.main - INFO - Fetching new items...
+2025-05-13 05:39:21,797 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:39:21,797 - src.main - INFO - Detecting sparks...
+2025-05-13 05:39:21,797 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 05:39:21,797 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 05:39:21,797 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 05:39:21,797 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 05:39:21,797 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 05:39:21,798 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:39:21,798 - src.main - INFO - Fetching new items...
+2025-05-13 05:39:21,799 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:39:21,799 - src.main - INFO - Detecting sparks...
+2025-05-13 05:39:21,799 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 05:39:21,799 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 05:39:21,799 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 05:39:21,799 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 05:39:21,799 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 05:39:21,800 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:39:21,800 - src.main - INFO - Fetching new items...
+2025-05-13 05:39:21,800 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 05:39:21,800 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:39:21,800 - src.main - INFO - Detecting sparks...
+2025-05-13 05:39:21,800 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 05:39:21,800 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 05:39:21,802 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 05:39:21,802 - src.main - INFO - Fetching new items...
+2025-05-13 05:39:21,802 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 05:39:21,802 - src.main - INFO - Detecting sparks...
+2025-05-13 05:39:21,802 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 05:39:21,802 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 05:39:21,802 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 05:39:21,802 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 05:39:21,805 - src.story_seed_generator - INFO - Google Generative AI client configured successfully.
+2025-05-13 05:39:21,806 - src.story_seed_generator - ERROR - GOOGLE_API_KEY environment variable not set or found in .env file.
+2025-05-13 05:39:21,810 - src.story_seed_generator - INFO - Successfully parsed LLM response into logline, questions, and keywords.
+2025-05-13 05:39:21,810 - src.story_seed_generator - INFO - Successfully parsed LLM response into logline, questions, and keywords.
+2025-05-13 05:39:21,816 - src.story_seed_generator - WARNING - Could not parse 'What If Questions' from LLM response.
+Response snippet:
+
+        Logline: A story about time travel.
+        
+        What If Questions:
+        - What if time travel was real?
+        ...
+2025-05-13 05:39:21,817 - src.story_seed_generator - WARNING - Received empty text from Gemini response for parsing.
+2025-05-13 05:39:21,818 - src.story_seed_generator - WARNING - Could not parse Logline from LLM response.
+Response snippet:
+This is not a properly formatted response...
+2025-05-13 05:39:21,822 - src.story_seed_generator - INFO - Generating story seed for spark: 'quantum' from 'test_source' using model 'gemini-1.5-flash-latest'
+2025-05-13 05:39:21,822 - src.story_seed_generator - INFO - Successfully parsed LLM response into logline, questions, and keywords.
+2025-05-13 05:39:21,822 - src.story_seed_generator - INFO - Successfully generated and parsed story seed for spark: 'quantum'
+2025-05-13 05:39:21,823 - src.story_seed_generator - INFO - Attempting to configure Gemini API before generation...
+2025-05-13 05:39:21,823 - src.story_seed_generator - ERROR - Gemini client not configured and configuration attempt failed. Cannot generate seed.
+2025-05-13 05:39:21,825 - src.story_seed_generator - INFO - Generating story seed for spark: 'quantum' from 'test_source' using model 'gemini-1.5-flash-latest'
+2025-05-13 05:39:21,825 - src.story_seed_generator - ERROR - Error during Gemini API call (attempt 1/3) for spark 'quantum': API Error
+Traceback (most recent call last):
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+Exception: API Error
+2025-05-13 05:39:21,825 - src.story_seed_generator - INFO - Retrying Gemini request after error (attempt 2/3) after 1 seconds...
+2025-05-13 05:39:22,825 - src.story_seed_generator - ERROR - Error during Gemini API call (attempt 2/3) for spark 'quantum': API Error
+Traceback (most recent call last):
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+Exception: API Error
+2025-05-13 05:39:22,826 - src.story_seed_generator - INFO - Retrying Gemini request after error (attempt 3/3) after 2 seconds...
+2025-05-13 05:39:24,828 - src.story_seed_generator - ERROR - Error during Gemini API call (attempt 3/3) for spark 'quantum': API Error
+Traceback (most recent call last):
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+  File "/home/todd/sparkstory-agent/src/story_seed_generator.py", line 185, in generate_story_seed
+    response = model.generate_content(prompt) #, safety_settings=safety_settings)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+Exception: API Error
+2025-05-13 05:39:24,829 - src.story_seed_generator - ERROR - Failed to generate story seed after 3 attempts due to API errors.
+2025-05-13 05:39:24,831 - src.story_seed_generator - INFO - Generating story seed for spark: 'quantum' from 'test_source' using model 'gemini-1.5-flash-latest'
+2025-05-13 05:39:24,831 - src.story_seed_generator - WARNING - Gemini API returned no text content for spark 'quantum' (Attempt 1/3). Finish Reason: SAFETY, Block Reason: None, Safety Ratings: <Mock name='mock.safety_ratings' id='140435255104832'>
+2025-05-13 05:39:24,831 - src.story_seed_generator - WARNING - Generation stopped due to safety/recitation (SAFETY). No retry.
+2025-05-13 05:39:24,832 - src.story_seed_generator - ERROR - Prompt template 'generation.prompt_template' is missing in the configuration.
+2025-05-13 05:39:24,835 - src.trend_detector - INFO - Analyzing 3 new items against 2 history items for sparks.
+2025-05-13 05:39:24,835 - src.trend_detector - INFO - Detected Spark: 'computing' from source 'test_source' (New Freq: 2, Hist Freq: 0) - Assoc. item: Quantum Computing Breakthrough Announced
+2025-05-13 05:39:24,835 - src.trend_detector - INFO - Detected Spark: 'quantum' from source 'test_source' (New Freq: 4, Hist Freq: 0) - Assoc. item: Another Quantum Development
+2025-05-13 05:39:24,835 - src.trend_detector - INFO - Detected 2 sparks in this cycle.
+2025-05-13 05:39:24,836 - src.trend_detector - INFO - Analyzing 1 new items against 1 history items for sparks.
+2025-05-13 05:39:24,836 - src.trend_detector - INFO - Detected 0 sparks in this cycle.
+2025-05-13 05:39:24,837 - src.trend_detector - INFO - Analyzing 2 new items against 0 history items for sparks.
+2025-05-13 05:39:24,837 - src.trend_detector - INFO - Detected Spark: 'different' from source 'test_source' (New Freq: 2, Hist Freq: 0) - Assoc. item: Another Unique Topic
+2025-05-13 05:39:24,837 - src.trend_detector - INFO - Detected Spark: 'unique' from source 'test_source' (New Freq: 2, Hist Freq: 0) - Assoc. item: Another Unique Topic
+2025-05-13 05:39:24,837 - src.trend_detector - INFO - Detected 2 sparks in this cycle.
+2025-05-13 05:39:24,837 - src.trend_detector - INFO - No new items to analyze for sparks.
+2025-05-13 05:39:24,837 - src.trend_detector - INFO - No new items to analyze for sparks.
+2025-05-13 05:39:24,838 - src.trend_detector - INFO - Analyzing 2 new items against 0 history items for sparks.
+2025-05-13 05:39:24,838 - src.trend_detector - INFO - Detected Spark: 'blockchain' from source 'source2' (New Freq: 4, Hist Freq: 0) - Assoc. item: Blockchain Revolution
+2025-05-13 05:39:24,838 - src.trend_detector - INFO - Detected 1 sparks in this cycle.

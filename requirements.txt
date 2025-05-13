@@ -1,0 +1,9 @@
+# requirements.txt
+google-generativeai
+PyYAML
+feedparser
+requests
+schedule
+pytest
+pytest-cov
+python-dotenv # For loading .env file for API key during development
