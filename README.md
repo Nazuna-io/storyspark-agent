@@ -156,7 +156,7 @@ A researcher discovers quantum entanglement can transmit consciousness between p
 
 ## License
 
-This project is proprietary software. All rights reserved.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
