@@ -4,7 +4,7 @@ This guide provides instructions for deploying the StorySpark Agent to productio
 
 ## Prerequisites
 
-- Python 3.8 or higher
+- Python 3.10 or higher
 - Access to target deployment environment
 - Google Gemini API key
 
@@ -78,7 +78,7 @@ sudo systemctl status storyspark-agent
 #### Create Dockerfile
 
 ```dockerfile
-FROM python:3.8-slim
+FROM python:3.10-slim
 
 WORKDIR /app
 

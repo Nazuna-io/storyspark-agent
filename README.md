@@ -18,7 +18,7 @@ An AI-powered agent that monitors Reddit and RSS feeds for trending topics ("spa
    cd storyspark-agent
    ```
 
-2. **Set up Python environment**:
+2. **Set up Python environment** (requires Python 3.10+):
    ```bash
    python3 -m venv .venv
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate

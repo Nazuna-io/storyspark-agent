@@ -1,0 +1,35 @@
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[project]
+name = "storyspark-agent"
+version = "0.1.0"
+description = "AI-powered agent that monitors Reddit and RSS feeds for trending topics"
+requires-python = ">=3.10"
+dependencies = [
+    "google-generativeai",
+    "PyYAML",
+    "feedparser",
+    "requests",
+    "schedule",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "pre-commit==3.6.0",
+    "black==23.1.0",
+    "isort==5.12.0",
+    "flake8==6.0.0",
+    "bandit==1.7.4",
+    "mypy==1.0.1",
+    "types-requests==2.31.0",
+    "types-PyYAML==6.0.12",
+]
