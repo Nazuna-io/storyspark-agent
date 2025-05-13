@@ -61,38 +61,24 @@ def test_basic_integration():
 
         mock_parse.return_value = mock_result
 
-        # Mock Gemini
-        with patch("google.generativeai.GenerativeModel") as mock_genai:
-            mock_model = Mock()
-            mock_response = Mock()
-            mock_response.candidates = [
-                Mock(
-                    content=Mock(
-                        parts=[
-                            Mock(
-                                text="""
-            **Logline:**
-            A test logline
+        # Mock both configuration and generation functions at the main module level
+        with patch("src.main.configure_genai") as mock_configure:
+            with patch("src.main.generate_story_seed") as mock_generate:
+                # Configure returns True to indicate API is configured
+                mock_configure.return_value = True
+                # Generate returns a mock seed
+                mock_generate.return_value = {
+                    "logline": "A test logline",
+                    "spark_keyword": "ai",
+                    "what_if_questions": ["What if test?"],
+                    "thematic_keywords": ["Test"],
+                }
 
-            **What If Questions:**
-            - What if test?
+                # Run cycle
+                history, timestamps, seeds = run_agent_cycle(config, [], {})
 
-            **Thematic Keywords:**
-            - Test
-            """
-                            )
-                        ]
-                    )
-                )
-            ]
-            mock_model.generate_content.return_value = mock_response
-            mock_genai.return_value = mock_model
-
-            # Run cycle
-            history, timestamps, seeds = run_agent_cycle(config, [], {})
-
-            # Check results
-            assert history is not None
-            assert timestamps is not None
-            print(f"Seeds: {seeds}")
-            # We might not get seeds if frequency isn't high enough
+                # Check results
+                assert history is not None
+                assert timestamps is not None
+                print(f"Seeds: {seeds}")
+                # We might not get seeds if frequency isn't high enough
