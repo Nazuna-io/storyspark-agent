@@ -4,6 +4,8 @@ import os
 import tempfile
 from unittest.mock import Mock, patch
 
+import pytest
+
 from src.main import _ensure_data_dir, _load_json, _save_json, main, save_seeds_to_markdown
 
 
@@ -103,9 +105,14 @@ def test_save_seeds_error_handling():
 
 def test_main_no_config():
     """Test main function when config fails to load."""
-    with patch("src.config_loader.load_config", return_value=None):
-        with patch("sys.exit") as mock_exit:
-            main()
+    # Properly mock the load_config function to return None
+    with patch("src.main.load_config", return_value=None) as mock_load_config:
+        with patch("sys.exit", side_effect=SystemExit(1)) as mock_exit:
+            with pytest.raises(SystemExit):
+                main()
+            # Verify that load_config was called with the config file
+            mock_load_config.assert_called_once()
+            # Verify that sys.exit was called with status 1
             mock_exit.assert_called_once_with(1)
 
 
