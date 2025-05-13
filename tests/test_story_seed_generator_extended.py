@@ -1,5 +1,4 @@
 # tests/test_story_seed_generator_extended.py
-import pytest
 from unittest.mock import patch, Mock
 import os
 from src.story_seed_generator import generate_story_seed, _parse_gemini_response, configure_genai

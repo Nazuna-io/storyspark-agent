@@ -74,7 +74,9 @@ def detect_sparks(new_items: List[Dict[str, Any]],
                  keyword_latest_item[keyword] = item # Store the first encountered item
             new_item_keywords[keyword].append(item.get('title', 'Unknown Title'))
             # Update if current item is newer
-            if item.get('timestamp') > keyword_latest_item[keyword].get('timestamp'):
+            item_timestamp = item.get('timestamp')
+            latest_timestamp = keyword_latest_item[keyword].get('timestamp')
+            if item_timestamp and latest_timestamp and item_timestamp > latest_timestamp:
                 keyword_latest_item[keyword] = item
 
     new_freq = Counter(new_keywords_all)

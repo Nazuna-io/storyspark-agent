@@ -261,7 +261,7 @@ def main():
     # Note: A class-based approach would be cleaner for managing state.
     state_container = {'history': history, 'timestamps': current_timestamps}
 
-    def scheduled_job():
+    def scheduled_job() -> None:
         logger.info("Scheduler triggered agent cycle.")
         try:
             # Pass current state from container
