@@ -1,4 +1,5 @@
 # .pre-commit-config.yaml
+exclude: '^(agent\.log|test_agent\.log|data/.*\.json|story_sparks\.md|fix_.*\.py|fix_.*\.sh)$'
 repos:
   - repo: https://github.com/psf/black
     rev: 23.1.0
