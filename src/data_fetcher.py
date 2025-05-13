@@ -6,7 +6,7 @@ import logging
 from datetime import datetime, timezone, timedelta
 import time
 import os
-from typing import List, Dict, Tuple, Optional, Any
+from typing import List, Dict, Tuple, Optional, Any, Union
 
 logger = logging.getLogger(__name__)
 STATE_FILE = "fetcher_state.json"
@@ -67,7 +67,7 @@ def _parse_rfc822_datetime(dt_str: Any) -> Optional[datetime]:
     logger.warning(f"Cannot parse unrecognized type for datetime: {type(dt_str)}, value: {dt_str}")
     return None
 
-def _parse_unix_timestamp(ts: float | int | str) -> Optional[datetime]:
+def _parse_unix_timestamp(ts: Union[float, int, str]) -> Optional[datetime]:
     """Converts a Unix timestamp (potentially as str) to a timezone-aware UTC datetime."""
     try:
         # Convert to float first to handle potential string inputs
