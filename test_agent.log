@@ -56,7 +56,7 @@
 Response snippet:
 
         Logline: A story about time travel.
-        
+
         What If Questions:
         - What if time travel was real?
         ...
@@ -345,7 +345,7 @@ OSError: Cannot write
 Response snippet:
 
         Logline: A story about time travel.
-        
+
         What If Questions:
         - What if time travel was real?
         ...
@@ -496,7 +496,7 @@ Exception: API Error
 Response snippet:
 
         Logline: A story about time travel.
-        
+
         What If Questions:
         - What if time travel was real?
         ...
@@ -647,7 +647,7 @@ Exception: API Error
 Response snippet:
 
         Logline: A story about time travel.
-        
+
         What If Questions:
         - What if time travel was real?
         ...
@@ -798,7 +798,7 @@ Exception: API Error
 Response snippet:
 
         Logline: A story about time travel.
-        
+
         What If Questions:
         - What if time travel was real?
         ...
@@ -960,7 +960,7 @@ OSError: Cannot write
 Response snippet:
 
         Logline: A story about time travel.
-        
+
         What If Questions:
         - What if time travel was real?
         ...
@@ -1055,7 +1055,7 @@ Response snippet:
 
     **What If Questions:**
     - Question 1
-    
+
     **Thematic Keywords:**
     - Keyword 1
     ...
@@ -1136,4 +1136,3 @@ Exception: API Error
 2025-05-13 06:14:33,966 - src.trend_detector - INFO - Analyzing 2 new items against 0 history items for sparks.
 2025-05-13 06:14:33,966 - src.trend_detector - INFO - Detected Spark: 'blockchain' from source 'source2' (New Freq: 4, Hist Freq: 0) - Assoc. item: Blockchain Revolution
 2025-05-13 06:14:33,966 - src.trend_detector - INFO - Detected 1 sparks in this cycle.
-

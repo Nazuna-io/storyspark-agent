@@ -2,9 +2,10 @@
 import json
 import os
 import tempfile
-import pytest
 from datetime import datetime, timedelta, timezone
 from unittest.mock import MagicMock, Mock, patch
+
+import pytest
 
 from src.data_fetcher import load_state, save_state
 from src.main import run_agent_cycle
@@ -129,11 +130,11 @@ class TestEndToEndIntegration:
                             text="""
         **Logline:**
         In a world where AI consciousness emerges, a scientist races to understand.
-        
+
         **What If Questions:**
         - What if AI developed emotions?
         - What if machines could dream?
-        
+
         **Thematic Keywords:**
         - Consciousness
         - Ethics

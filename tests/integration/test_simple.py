@@ -73,10 +73,10 @@ def test_basic_integration():
                                 text="""
             **Logline:**
             A test logline
-            
+
             **What If Questions:**
             - What if test?
-            
+
             **Thematic Keywords:**
             - Test
             """
@@ -96,4 +96,3 @@ def test_basic_integration():
             assert timestamps is not None
             print(f"Seeds: {seeds}")
             # We might not get seeds if frequency isn't high enough
-

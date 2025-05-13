@@ -198,19 +198,19 @@ from datetime import datetime, timedelta
 def check_health():
     # Check if the agent has run recently
     state_file = 'data/fetcher_state.json'
-    
+
     if not os.path.exists(state_file):
         return False, "State file not found"
-    
+
     with open(state_file) as f:
         state = json.load(f)
-    
+
     # Check if any source was updated in the last 2 hours
     cutoff = datetime.now() - timedelta(hours=2)
     for timestamp in state.get('last_timestamps', {}).values():
         if timestamp and datetime.fromisoformat(timestamp) > cutoff:
             return True, "Agent is running"
-    
+
     return False, "Agent has not updated recently"
 
 if __name__ == "__main__":
