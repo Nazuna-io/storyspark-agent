@@ -66,6 +66,40 @@ The agent is configured via `config.yaml`:
 
 ## Development
 
+### Setup Development Environment
+
+```bash
+# Install development dependencies
+pip install -r requirements-dev.txt
+
+# Install pre-commit hooks
+pre-commit install
+```
+
+### Linting and Code Quality
+
+The project uses several tools to maintain code quality:
+
+- **Black**: Code formatting
+- **isort**: Import sorting
+- **Flake8**: Style guide enforcement
+- **mypy**: Static type checking
+- **Bandit**: Security linting
+
+Run all linters:
+```bash
+pre-commit run --all-files
+```
+
+Or run individual tools:
+```bash
+black src/
+isort src/
+flake8 src/
+mypy src/
+bandit -r src/
+```
+
 ### Running Tests
 
 ```bash
