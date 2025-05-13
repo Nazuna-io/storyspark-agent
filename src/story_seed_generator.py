@@ -73,11 +73,13 @@ def _parse_gemini_response(text: str) -> Optional[Dict[str, Any]]:
             logger.warning(f"Could not parse Logline from LLM response.\nResponse snippet:\n{text[:500]}...")
             return None # Require logline
         if not what_if_questions:
-            logger.warning(f"Could not parse 'What If Questions' from LLM response.\nResponse snippet:\n{text[:500]}...")
+            logger.warning(f"Could not parse 'What If Questions' from LLM response.\n"
+                          f"Response snippet:\n{text[:500]}...")
             # Decide if we allow seeds without questions/keywords. For now, let's require them.
             return None
         if not thematic_keywords:
-            logger.warning(f"Could not parse 'Thematic Keywords' from LLM response.\nResponse snippet:\n{text[:500]}...")
+            logger.warning(f"Could not parse 'Thematic Keywords' from LLM response.\n"
+                          f"Response snippet:\n{text[:500]}...")
             return None
 
         logger.info("Successfully parsed LLM response into logline, questions, and keywords.")
@@ -88,7 +90,8 @@ def _parse_gemini_response(text: str) -> Optional[Dict[str, Any]]:
         }
 
     except Exception as e:
-        logger.error(f"Error parsing Gemini response: {e}\nResponse Text (first 500 chars):\n{text[:500]}...", exc_info=True)
+        logger.error(f"Error parsing Gemini response: {e}\n"
+                    f"Response Text (first 500 chars):\n{text[:500]}...", exc_info=True)
         return None
 
 def _split_items(item_string: str) -> List[str]:
@@ -197,7 +200,9 @@ def generate_story_seed(spark: Dict[str, Any], config: Dict[str, Any]) -> Option
                  logger.warning("AttributeError accessing response.text. Response structure might be unexpected.")
 
             if response_text:
-                logger.debug(f"Raw Gemini response for spark '{spark_keyword}':\n------ START RAW RESPONSE ------\n{response_text}\n------ END RAW RESPONSE ------")
+                logger.debug(f"Raw Gemini response for spark '{spark_keyword}':\n"
+                            f"------ START RAW RESPONSE ------\n{response_text}\n"
+                            f"------ END RAW RESPONSE ------")
                 # --- Parsing the Successful Response --- 
                 parsed_content = _parse_gemini_response(response_text)
 
@@ -219,7 +224,8 @@ def generate_story_seed(spark: Dict[str, Any], config: Dict[str, Any]) -> Option
                 else:
                     # Parsing failed, error logged within _parse_gemini_response
                     # Don't retry if parsing failed on a seemingly valid response
-                    logger.error(f"Failed to parse the Gemini response for spark '{spark_keyword}'. See previous logs. Raw response snippet:\n{response_text[:500]}...")
+                    logger.error(f"Failed to parse the Gemini response for spark '{spark_keyword}'. "
+                                f"See previous logs. Raw response snippet:\n{response_text[:500]}...")
                     return None # Parsing failure is final for this attempt
             else:
                 # Handle cases where response.text was not accessible or empty
@@ -237,7 +243,10 @@ def generate_story_seed(spark: Dict[str, Any], config: Dict[str, Any]) -> Option
                 except Exception as e:
                      logger.debug(f"Error accessing detailed response feedback: {e}")
 
-                logger.warning(f"Gemini API returned no text content for spark '{spark_keyword}' (Attempt {attempt+1}/{api_max_retries+1}). Finish Reason: {finish_reason}, Block Reason: {block_reason}, Safety Ratings: {safety_ratings}")
+                logger.warning(f"Gemini API returned no text content for spark '{spark_keyword}' "
+                              f"(Attempt {attempt+1}/{api_max_retries+1}). "
+                              f"Finish Reason: {finish_reason}, Block Reason: {block_reason}, "
+                              f"Safety Ratings: {safety_ratings}")
 
                 # Decide whether to retry based on the reason
                 should_retry = False
@@ -246,7 +255,8 @@ def generate_story_seed(spark: Dict[str, Any], config: Dict[str, Any]) -> Option
                     logger.warning("Model stopped normally but produced no text. Retrying might help.")
                     should_retry = True
                 elif finish_reason == 'MAX_TOKENS':
-                    logger.warning("Generation stopped due to max tokens. Consider revising prompt or model settings. No retry.")
+                    logger.warning("Generation stopped due to max tokens. "
+                                  "Consider revising prompt or model settings. No retry.")
                     return None # No point retrying
                 elif block_reason: 
                     logger.warning(f"Generation blocked due to safety settings ({block_reason}). No retry.")
@@ -259,19 +269,26 @@ def generate_story_seed(spark: Dict[str, Any], config: Dict[str, Any]) -> Option
 
                 if should_retry and attempt < api_max_retries:
                     delay = api_retry_delay * (attempt + 1) # Basic exponential backoff
-                    logger.info(f"Retrying Gemini request (attempt {attempt + 2}/{api_max_retries + 1}) after {delay} seconds...")
+                    logger.info(f"Retrying Gemini request "
+                               f"(attempt {attempt + 2}/{api_max_retries + 1}) "
+                               f"after {delay} seconds...")
                     time.sleep(delay)
                     continue # Go to next iteration of the loop
                 else:
-                    logger.error(f"Gemini returned no text content after {attempt + 1} attempts or retry not warranted.")
+                    logger.error(f"Gemini returned no text content after {attempt + 1} attempts "
+                                f"or retry not warranted.")
                     return None # Failure after retries or non-retryable issue
 
         except Exception as e:
             # Catch other potential API errors (network, auth issues caught by configure_genai usually)
-            logger.error(f"Error during Gemini API call (attempt {attempt + 1}/{api_max_retries + 1}) for spark '{spark_keyword}': {e}", exc_info=True)
+            logger.error(f"Error during Gemini API call "
+                        f"(attempt {attempt + 1}/{api_max_retries + 1}) "
+                        f"for spark '{spark_keyword}': {e}", exc_info=True)
             if attempt < api_max_retries:
                 delay = api_retry_delay * (attempt + 1)
-                logger.info(f"Retrying Gemini request after error (attempt {attempt + 2}/{api_max_retries + 1}) after {delay} seconds...")
+                logger.info(f"Retrying Gemini request after error "
+                           f"(attempt {attempt + 2}/{api_max_retries + 1}) "
+                           f"after {delay} seconds...")
                 time.sleep(delay)
             else:
                 logger.error(f"Failed to generate story seed after {api_max_retries + 1} attempts due to API errors.")

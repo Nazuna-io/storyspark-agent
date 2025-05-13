@@ -11,7 +11,10 @@ from typing import List, Dict, Any, Tuple
 # Project modules
 from src.config_loader import load_config
 from src.logger_config import setup_logging
-from src.data_fetcher import get_new_items, load_state as load_fetcher_state, save_state as save_fetcher_state, FetchedItem, TimestampState
+from src.data_fetcher import (
+    get_new_items, load_state as load_fetcher_state, 
+    save_state as save_fetcher_state, FetchedItem, TimestampState
+)
 from src.trend_detector import detect_sparks
 from src.story_seed_generator import configure_genai, generate_story_seed
 
@@ -103,7 +106,8 @@ def save_seeds_to_markdown(seeds: List[Dict[str, Any]], filepath: str):
             content += "No story seeds generated yet.\n"
         else:
             for seed in seeds:
-                content += f"## Spark: {seed.get('spark_keyword', 'N/A')} (Source: {seed.get('source_name', 'N/A')})\n\n"
+                content += (f"## Spark: {seed.get('spark_keyword', 'N/A')} "
+                           f"(Source: {seed.get('source_name', 'N/A')})\n\n")
                 content += f"**Logline:**\n{seed.get('logline', 'N/A')}\n\n"
                 content += "**What If Questions:**\n"
                 what_if_questions = seed.get('what_if_questions', [])
@@ -142,7 +146,11 @@ def save_seeds_to_markdown(seeds: List[Dict[str, Any]], filepath: str):
 
 # --- Main Agent Cycle ---
 
-def run_agent_cycle(config: Dict[str, Any], history: List[FetchedItem], current_timestamps: TimestampState) -> Tuple[List[FetchedItem], TimestampState, List[Dict[str, Any]]]:
+def run_agent_cycle(
+    config: Dict[str, Any], 
+    history: List[FetchedItem], 
+    current_timestamps: TimestampState
+) -> Tuple[List[FetchedItem], TimestampState, List[Dict[str, Any]]]:
     """Runs one complete cycle: fetch -> analyze -> generate."""
     logger.info("--- Starting Agent Cycle ---")
 
@@ -174,7 +182,8 @@ def run_agent_cycle(config: Dict[str, Any], history: List[FetchedItem], current_
     first_new_item_ts = min(item['timestamp'] for item in new_items) if new_items else datetime.now(timezone.utc)
     baseline_history = [item for item in updated_history if item['timestamp'] < first_new_item_ts]
 
-    logger.info(f"History contains {len(updated_history)} items (after update/purge). Using {len(baseline_history)} for baseline comparison.")
+    logger.info(f"History contains {len(updated_history)} items (after update/purge). "
+                f"Using {len(baseline_history)} for baseline comparison.")
 
     # 3. Detect Sparks
     logger.info("Detecting sparks...")

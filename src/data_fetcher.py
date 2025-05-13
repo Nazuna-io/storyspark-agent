@@ -109,7 +109,8 @@ def _load_fetcher_state(path: str = STATE_FILE) -> TimestampState:
                      dt = dt.astimezone(timezone.utc)
                 loaded_timestamps[source_key] = dt
             except (ValueError, TypeError):
-                 logger.warning(f"Could not parse timestamp from state for {source_key}: '{ts_str}'. Ignoring this entry.")
+                 logger.warning(f"Could not parse timestamp from state for {source_key}: '{ts_str}'. "
+                              f"Ignoring this entry.")
                  # Decide whether to store None or skip the key. Storing None might be safer.
                  loaded_timestamps[source_key] = None
 
@@ -203,7 +204,8 @@ def fetch_rss(feed_url: str, last_timestamp: Optional[datetime]) -> List[Fetched
 
 
             if entry_timestamp is None:
-                logger.debug(f"Skipping entry in '{source_name}' with no valid timestamp: {entry.get('link', entry.get('title', 'Unknown'))}")
+                logger.debug(f"Skipping entry in '{source_name}' with no valid timestamp: "
+                            f"{entry.get('link', entry.get('title', 'Unknown'))}")
                 continue
 
             # Timestamps are parsed into UTC by _parse_rfc822_datetime
@@ -252,7 +254,8 @@ def fetch_rss(feed_url: str, last_timestamp: Optional[datetime]) -> List[Fetched
 
     except ConnectionRefusedError as e:
          logger.error(f"Connection refused when fetching RSS feed {feed_url}: {e}")
-    except requests.exceptions.RequestException as e: # Catch potential network errors if feedparser uses requests internally
+    except requests.exceptions.RequestException as e:  
+        # Catch potential network errors if feedparser uses requests internally
         logger.error(f"Network error fetching RSS feed {feed_url}: {e}")
     except Exception as e:
         logger.error(f"Failed to fetch or parse RSS feed {feed_url}: {e}", exc_info=True)
@@ -306,7 +309,8 @@ def fetch_subreddit_json(subreddit_name: str, last_timestamp: Optional[datetime]
             created_utc = post_data.get('created_utc')
 
             if not created_utc:
-                logger.debug(f"Skipping post in r/{subreddit_name} with no timestamp: ID={post_data.get('id')}, Title={post_data.get('title')}")
+                logger.debug(f"Skipping post in r/{subreddit_name} with no timestamp: "
+                            f"ID={post_data.get('id')}, Title={post_data.get('title')}")
                 continue
 
             post_timestamp = _parse_unix_timestamp(created_utc)
@@ -318,7 +322,8 @@ def fetch_subreddit_json(subreddit_name: str, last_timestamp: Optional[datetime]
             if last_timestamp is not None and post_timestamp <= last_timestamp:
                 # Optimization: Since Reddit 'new' is sorted newest first, we can stop checking
                 # once we encounter a post older than or equal to the last timestamp.
-                logger.debug(f"Reached post older than last timestamp in r/{subreddit_name}. Stopping iteration for this source.")
+                logger.debug(f"Reached post older than last timestamp in r/{subreddit_name}. "
+                            f"Stopping iteration for this source.")
                 break # Stop processing older posts for this subreddit
 
             # --- Extract Item Details --- 
