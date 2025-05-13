@@ -3,7 +3,7 @@ import feedparser
 import requests
 import json
 import logging
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone
 import time
 import os
 from typing import List, Dict, Tuple, Optional, Any, Union
@@ -162,7 +162,10 @@ def fetch_rss(feed_url: str, last_timestamp: Optional[datetime]) -> List[Fetched
         # Add request headers - some feeds require a User-Agent
         headers = {'User-Agent': USER_AGENT}
         # Set a timeout for the request
-        feed_data = feedparser.parse(feed_url, agent=USER_AGENT, request_headers=headers, etag=None, modified=None) # Disable etag/modified for simplicity in MVP
+        feed_data = feedparser.parse(
+            feed_url, agent=USER_AGENT, request_headers=headers, 
+            etag=None, modified=None  # Disable etag/modified for simplicity in MVP
+        )
 
         if feed_data.bozo:
             ex = feed_data.get('bozo_exception', 'Unknown parsing error')

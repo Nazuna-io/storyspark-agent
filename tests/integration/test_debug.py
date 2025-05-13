@@ -1,11 +1,9 @@
 # tests/integration/test_debug.py
-import pytest
 from unittest.mock import patch, Mock
 import logging
 
 # Enable debug logging
 logging.basicConfig(level=logging.DEBUG)
-
 
 def test_simple_cycle():
     """Test minimal cycle with debug output."""

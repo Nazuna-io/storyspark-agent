@@ -1,12 +1,9 @@
 # tests/test_data_fetcher_extended.py
-import pytest
 from unittest.mock import patch, Mock
-from datetime import datetime, timezone
+
 import time
-import feedparser
 import requests
 from src.data_fetcher import fetch_rss, fetch_subreddit_json, _parse_rfc822_datetime, _parse_unix_timestamp
-
 
 def test_parse_rfc822_datetime_struct_time_error():
     """Test parsing time.struct_time with error."""
@@ -14,18 +11,15 @@ def test_parse_rfc822_datetime_struct_time_error():
         result = _parse_rfc822_datetime(time.struct_time((2024, 1, 1, 0, 0, 0, 0, 0, 0)))
         assert result is None
 
-
 def test_parse_rfc822_datetime_unknown_type():
     """Test parsing unknown type."""
     result = _parse_rfc822_datetime({'some': 'dict'})
     assert result is None
 
-
 def test_parse_unix_timestamp_error():
     """Test parsing invalid Unix timestamp."""
     result = _parse_unix_timestamp("not-a-number")
     assert result is None
-
 
 def test_fetch_rss_bozo_feed():
     """Test RSS feed with bozo flag."""
@@ -67,7 +61,6 @@ def test_fetch_rss_bozo_feed():
         items = fetch_rss('http://test.com/feed.xml', None)
         assert len(items) == 1  # Should still process entries
 
-
 def test_fetch_rss_high_status_code():
     """Test RSS feed with error status code."""
     with patch('feedparser.parse') as mock_parse:
@@ -82,7 +75,6 @@ def test_fetch_rss_high_status_code():
         
         items = fetch_rss('http://test.com/feed.xml', None)
         assert len(items) == 0
-
 
 def test_fetch_rss_entry_without_timestamp():
     """Test RSS entry without valid timestamp."""
@@ -118,7 +110,6 @@ def test_fetch_rss_entry_without_timestamp():
         
         items = fetch_rss('http://test.com/feed.xml', None)
         assert len(items) == 0  # Should skip entries without timestamps
-
 
 def test_fetch_rss_entry_without_id():
     """Test RSS entry without ID or link."""
@@ -156,13 +147,11 @@ def test_fetch_rss_entry_without_id():
         items = fetch_rss('http://test.com/feed.xml', None)
         assert len(items) == 0  # Should skip entries without ID
 
-
 def test_fetch_rss_connection_refused():
     """Test RSS feed with connection refused error."""
     with patch('feedparser.parse', side_effect=ConnectionRefusedError("Connection refused")):
         items = fetch_rss('http://test.com/feed.xml', None)
         assert len(items) == 0
-
 
 def test_fetch_rss_request_exception():
     """Test RSS feed with request exception."""
@@ -170,12 +159,10 @@ def test_fetch_rss_request_exception():
         items = fetch_rss('http://test.com/feed.xml', None)
         assert len(items) == 0
 
-
 def test_fetch_subreddit_json_invalid_name():
     """Test fetching subreddit with invalid name."""
     items = fetch_subreddit_json('###', None)
     assert len(items) == 0
-
 
 def test_fetch_subreddit_json_redirect():
     """Test fetching subreddit with redirect."""
@@ -194,7 +181,6 @@ def test_fetch_subreddit_json_redirect():
         items = fetch_subreddit_json('test', None)
         assert len(items) == 0
 
-
 def test_fetch_subreddit_json_invalid_json():
     """Test fetching subreddit with invalid JSON response."""
     with patch('requests.get') as mock_get:
@@ -208,7 +194,6 @@ def test_fetch_subreddit_json_invalid_json():
         items = fetch_subreddit_json('test', None)
         assert len(items) == 0
 
-
 def test_fetch_subreddit_json_unexpected_structure():
     """Test fetching subreddit with unexpected JSON structure."""
     with patch('requests.get') as mock_get:
@@ -220,7 +205,6 @@ def test_fetch_subreddit_json_unexpected_structure():
         
         items = fetch_subreddit_json('test', None)
         assert len(items) == 0
-
 
 def test_fetch_subreddit_json_non_t3_kind():
     """Test fetching subreddit with non-t3 kind items."""
@@ -242,7 +226,6 @@ def test_fetch_subreddit_json_non_t3_kind():
         
         items = fetch_subreddit_json('test', None)
         assert len(items) == 0
-
 
 def test_fetch_subreddit_json_missing_timestamp():
     """Test fetching subreddit post without timestamp."""
@@ -269,7 +252,6 @@ def test_fetch_subreddit_json_missing_timestamp():
         items = fetch_subreddit_json('test', None)
         assert len(items) == 0
 
-
 def test_fetch_subreddit_json_missing_id():
     """Test fetching subreddit post without ID."""
     with patch('requests.get') as mock_get:
@@ -295,7 +277,6 @@ def test_fetch_subreddit_json_missing_id():
         items = fetch_subreddit_json('test', None)
         assert len(items) == 0
 
-
 def test_fetch_subreddit_json_rate_limited():
     """Test fetching subreddit with rate limit error."""
     with patch('requests.get') as mock_get:
@@ -308,7 +289,6 @@ def test_fetch_subreddit_json_rate_limited():
         items = fetch_subreddit_json('test', None)
         assert len(items) == 0
 
-
 def test_fetch_subreddit_json_forbidden():
     """Test fetching subreddit with forbidden error."""
     with patch('requests.get') as mock_get:
@@ -320,13 +300,11 @@ def test_fetch_subreddit_json_forbidden():
         items = fetch_subreddit_json('test', None)
         assert len(items) == 0
 
-
 def test_fetch_subreddit_json_connection_error():
     """Test fetching subreddit with connection error."""
     with patch('requests.get', side_effect=requests.exceptions.ConnectionError("Connection error")):
         items = fetch_subreddit_json('test', None)
         assert len(items) == 0
-
 
 def test_fetch_subreddit_json_timeout():
     """Test fetching subreddit with timeout."""

@@ -1,11 +1,12 @@
 # tests/integration/test_debug_simple.py
 import os
+import time
+from datetime import datetime, timezone, timedelta
+from unittest.mock import patch, Mock
+
 os.environ['GOOGLE_API_KEY'] = 'test-key'
 
-import pytest
-from unittest.mock import patch, Mock
-from datetime import datetime, timezone, timedelta
-from src.main import run_agent_cycle
+from src.main import run_agent_cycle  # noqa: E402
 
 
 def test_simple_full_workflow():
@@ -65,7 +66,7 @@ def test_simple_full_workflow():
         print("Feedparser mocked")
         
         # Mock Gemini
-        with patch('google.generativeai.configure') as mock_configure:
+        with patch('google.generativeai.configure'):
             with patch('google.generativeai.GenerativeModel') as mock_genai:
                 mock_model = Mock()
                 mock_response = Mock()

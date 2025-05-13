@@ -35,7 +35,6 @@ def mock_spark():
         'latest_item_timestamp': datetime.now(timezone.utc)
     }
 
-
 class TestConfigureGenai:
     """Test Gemini API configuration."""
     
@@ -81,7 +80,6 @@ class TestConfigureGenai:
         
         assert result is True
         mock_configure.assert_not_called()  # Should not configure again
-
 
 class TestParseGeminiResponse:
     """Test response parsing functionality."""
@@ -160,7 +158,6 @@ class TestParseGeminiResponse:
         result = _parse_gemini_response(response_text)
         assert result is None
 
-
 class TestSplitItems:
     """Test item splitting functionality."""
     
@@ -204,7 +201,6 @@ Future: Predictions and possibilities"""
         """Test splitting empty text."""
         result = _split_items("")
         assert result == []
-
 
 class TestGenerateStorySeed:
     """Test story seed generation."""

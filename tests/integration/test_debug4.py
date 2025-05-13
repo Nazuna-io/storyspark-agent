@@ -1,12 +1,10 @@
 # tests/integration/test_debug4.py
-import pytest
 from unittest.mock import patch, Mock
 import logging
 import os
 
 # Enable debug logging
 logging.basicConfig(level=logging.DEBUG)
-
 
 def test_full_integration_analyze():
     """Test full integration and analyze results."""

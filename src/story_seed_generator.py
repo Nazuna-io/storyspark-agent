@@ -191,10 +191,10 @@ def generate_story_seed(spark: Dict[str, Any], config: Dict[str, Any]) -> Option
                 response_text = response.text
             except ValueError:
                  # This can happen if the response was blocked. Check feedback.
-                 logger.warning(f"ValueError accessing response.text, possibly due to content blocking.")
+                 logger.warning("ValueError accessing response.text, possibly due to content blocking.")
             except AttributeError:
                 # Handle cases where the response structure might be different
-                 logger.warning(f"AttributeError accessing response.text. Response structure might be unexpected.")
+                 logger.warning("AttributeError accessing response.text. Response structure might be unexpected.")
 
             if response_text:
                 logger.debug(f"Raw Gemini response for spark '{spark_keyword}':\n------ START RAW RESPONSE ------\n{response_text}\n------ END RAW RESPONSE ------")

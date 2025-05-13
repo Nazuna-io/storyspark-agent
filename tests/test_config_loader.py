@@ -1,7 +1,6 @@
 # tests/test_config_loader.py
 import pytest
 import yaml
-import os
 
 # Assume config_loader is importable (adjust path if necessary)
 from src.config_loader import load_config

@@ -1,8 +1,7 @@
 # tests/integration/test_simple.py
-import pytest
+
 from unittest.mock import patch, Mock
 from src.main import run_agent_cycle
-
 
 def test_basic_integration():
     """Test basic integration without complex mocking."""

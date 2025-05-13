@@ -1,11 +1,9 @@
 # tests/integration/test_debug2.py
-import pytest
 from unittest.mock import patch, Mock
 import logging
 
 # Enable debug logging
 logging.basicConfig(level=logging.DEBUG)
-
 
 def test_with_mock_feedparser():
     """Test with mocked feedparser."""

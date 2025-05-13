@@ -71,13 +71,13 @@ def load_config(path: str = "config.yaml") -> Dict[str, Any]:
         logger.info("Configuration validated successfully.")
         
         return config
-    except FileNotFoundError as e:
+    except FileNotFoundError:
         # Already logged, just re-raise
         raise
     except yaml.YAMLError as e:
         logger.error(f"Error parsing configuration file '{path}': {e}")
         raise
-    except ValueError as e:
+    except ValueError:
          # Validation errors, already logged, re-raise
          raise
     except Exception as e:

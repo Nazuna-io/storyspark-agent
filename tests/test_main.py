@@ -3,7 +3,6 @@ import pytest
 from unittest.mock import Mock, patch, MagicMock
 from datetime import datetime, timezone, timedelta
 import json
-import os
 
 from src.main import (
     run_agent_cycle,
@@ -80,7 +79,6 @@ def sample_seeds():
         }
     ]
 
-
 class TestDatetimeSerialization:
     """Test datetime serialization helpers."""
     
@@ -121,7 +119,6 @@ class TestDatetimeSerialization:
         result = _datetime_parser(data)
         assert result['timestamp'] == 'invalid-datetime'  # Should remain unchanged
         assert result['other_field'] == 'test'
-
 
 class TestFileOperations:
     """Test file operation helpers."""
@@ -177,7 +174,6 @@ class TestFileOperations:
         result = _load_json(str(test_file), default={'default': 'value'})
         assert result == {'default': 'value'}
 
-
 class TestSaveSeedsToMarkdown:
     """Test markdown saving functionality."""
     
@@ -227,7 +223,6 @@ class TestSaveSeedsToMarkdown:
         assert "quantum" in content
         assert "AI becomes sentient" in content
         assert "Quantum breakthrough" in content
-
 
 class TestRunAgentCycle:
     """Test the main agent cycle function."""
@@ -375,7 +370,6 @@ class TestRunAgentCycle:
         
         assert seeds == []  # No seeds generated
         mock_generate.assert_not_called()  # Should not attempt to generate
-
 
 class TestScheduledJob:
     """Test the scheduled job function behavior."""

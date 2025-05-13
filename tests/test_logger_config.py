@@ -1,7 +1,6 @@
 # tests/test_logger_config.py
 import pytest
 import logging
-import os
 from unittest.mock import patch, mock_open
 from src.logger_config import setup_logging
 
@@ -33,7 +32,6 @@ def mock_config_no_file():
             'log_level': 'WARNING'
         }
     }
-
 
 class TestSetupLogging:
     """Test logging setup functionality."""

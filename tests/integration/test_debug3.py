@@ -1,12 +1,10 @@
 # tests/integration/test_debug3.py
-import pytest
 from unittest.mock import patch, Mock
 import logging
 import os
 
 # Enable debug logging
 logging.basicConfig(level=logging.DEBUG)
-
 
 def test_with_mock_gemini():
     """Test with mocked Gemini but no feedparser yet."""
@@ -45,7 +43,6 @@ def test_with_mock_gemini():
         # Should have no new items (no sources)
         assert history == []
         assert seeds == []
-
 
 def test_full_integration_minimal():
     """Test full integration with minimal mocking."""

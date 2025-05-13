@@ -1,17 +1,14 @@
 # tests/test_config_loader_extended.py
 import pytest
-import os
 from unittest.mock import patch, mock_open
 from src.config_loader import load_config
 import yaml
-
 
 def test_load_config_file_not_found():
     """Test load_config when file doesn't exist."""
     with patch('os.path.exists', return_value=False):
         with pytest.raises(FileNotFoundError):
             load_config('nonexistent.yaml')
-
 
 def test_load_config_invalid_yaml():
     """Test load_config with invalid YAML."""
@@ -22,14 +19,12 @@ def test_load_config_invalid_yaml():
                 with pytest.raises(yaml.YAMLError):
                     load_config('config.yaml')
 
-
 def test_load_config_io_error():
     """Test load_config with IO error."""
     with patch('os.path.exists', return_value=True):
         with patch('builtins.open', side_effect=IOError("Cannot read file")):
             with pytest.raises(IOError):
                 load_config('config.yaml')
-
 
 def test_load_config_missing_required_keys():
     """Test load_config with missing required keys."""
@@ -38,7 +33,6 @@ def test_load_config_missing_required_keys():
         with patch('builtins.open', mock_open(read_data=yaml.dump(invalid_config))):
             with pytest.raises(ValueError, match="Missing required configuration section"):
                 load_config('config.yaml')
-
 
 def test_load_config_invalid_types():
     """Test load_config with invalid types."""
@@ -54,7 +48,6 @@ def test_load_config_invalid_types():
             with pytest.raises(ValueError, match="'sources' section must be a dictionary"):
                 load_config('config.yaml')
 
-
 def test_load_config_missing_required_subkeys():
     """Test load_config with missing required subkeys."""
     invalid_config = {
@@ -69,14 +62,12 @@ def test_load_config_missing_required_subkeys():
             with pytest.raises(ValueError, match="Missing or invalid"):
                 load_config('config.yaml')
 
-
 def test_load_config_empty_file():
     """Test load_config with empty file."""
     with patch('os.path.exists', return_value=True):
         with patch('builtins.open', mock_open(read_data="")):
             with pytest.raises(ValueError, match="empty or invalid"):
                 load_config('config.yaml')
-
 
 def test_load_config_invalid_list_types():
     """Test load_config with invalid list types."""

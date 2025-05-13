@@ -3,7 +3,6 @@ import pytest
 from unittest.mock import Mock, patch, MagicMock
 from datetime import datetime, timezone, timedelta
 import json
-import os
 import time
 
 from src.data_fetcher import (
@@ -109,7 +108,6 @@ class TestLoadSaveState:
         saved_data = json.loads(state_file.read_text())
         assert saved_data['last_timestamps']['source1'] == '2024-01-01T00:00:00+00:00'
         assert saved_data['last_timestamps']['source2'] == '2024-01-02T00:00:00+00:00'
-
 
 class TestFetchRss:
     """Test RSS feed fetching functionality."""
@@ -219,7 +217,6 @@ class TestFetchRss:
         
         assert items == []
 
-
 class TestFetchSubredditJson:
     """Test subreddit post fetching functionality."""
     
@@ -299,7 +296,6 @@ class TestFetchSubredditJson:
         )
         
         assert items == []
-
 
 class TestGetNewItems:
     """Test the main get_new_items function."""

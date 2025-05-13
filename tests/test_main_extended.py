@@ -1,13 +1,9 @@
 # tests/test_main_extended.py
-import pytest
 from unittest.mock import patch, Mock
 import os
-import sys
 from src.main import main, _ensure_data_dir, _save_json, _load_json, save_seeds_to_markdown
 import tempfile
 import json
-from datetime import datetime, timezone
-
 
 def test_ensure_data_dir_creates():
     """Test that _ensure_data_dir creates directory."""
@@ -17,14 +13,12 @@ def test_ensure_data_dir_creates():
             _ensure_data_dir()
             assert os.path.exists(data_dir)
 
-
 def test_ensure_data_dir_exists():
     """Test that _ensure_data_dir handles existing directory."""
     with tempfile.TemporaryDirectory() as tmpdir:
         with patch('src.main.DATA_DIR', tmpdir):
             _ensure_data_dir()  # Should not error
             assert os.path.exists(tmpdir)
-
 
 def test_save_json_creates_dir():
     """Test that _save_json creates directory if needed."""
@@ -38,14 +32,12 @@ def test_save_json_creates_dir():
                 data = json.load(f)
                 assert data['test'] == 'data'
 
-
 def test_load_json_file_not_exists():
     """Test _load_json when file doesn't exist."""
     with tempfile.TemporaryDirectory() as tmpdir:
         filepath = os.path.join(tmpdir, 'nonexistent.json')
         result = _load_json(filepath, default={'default': 'value'})
         assert result == {'default': 'value'}
-
 
 def test_load_json_invalid_json():
     """Test _load_json with invalid JSON."""
@@ -56,7 +48,6 @@ def test_load_json_invalid_json():
         
         result = _load_json(filepath, default={'default': 'value'})
         assert result == {'default': 'value'}
-
 
 def test_save_seeds_to_markdown_empty():
     """Test saving empty seeds to markdown."""
@@ -69,7 +60,6 @@ def test_save_seeds_to_markdown_empty():
             with open(filepath) as f:
                 content = f.read()
                 assert "No story seeds generated yet" in content
-
 
 def test_save_seeds_to_markdown_with_data():
     """Test saving seeds with data to markdown."""
@@ -93,13 +83,11 @@ def test_save_seeds_to_markdown_with_data():
                 assert "Test logline" in content
                 assert "Question 1" in content
 
-
 def test_save_seeds_error_handling():
     """Test error handling in save_seeds_to_markdown."""
     with patch('builtins.open', side_effect=IOError("Cannot write")):
         # Should not raise, just log
         save_seeds_to_markdown([{'test': 'data'}], '/invalid/path.md')
-
 
 def test_main_no_config():
     """Test main function when config fails to load."""
@@ -107,7 +95,6 @@ def test_main_no_config():
         with patch('sys.exit') as mock_exit:
             main()
             mock_exit.assert_called_once_with(1)
-
 
 def test_main_immediate_run():
     """Test main function with immediate run enabled."""
