@@ -1136,3 +1136,909 @@ Exception: API Error
 2025-05-13 06:14:33,966 - src.trend_detector - INFO - Analyzing 2 new items against 0 history items for sparks.
 2025-05-13 06:14:33,966 - src.trend_detector - INFO - Detected Spark: 'blockchain' from source 'source2' (New Freq: 4, Hist Freq: 0) - Assoc. item: Blockchain Revolution
 2025-05-13 06:14:33,966 - src.trend_detector - INFO - Detected 1 sparks in this cycle.
+2025-05-13 17:06:27,336 - test.module - INFO - Test message
+2025-05-13 17:06:27,345 - src.main - INFO - Creating data directory: data
+2025-05-13 17:06:27,353 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 17:06:27,355 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-25/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:06:27,357 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-25/test_save_seeds_empty0/test_sparks.md
+2025-05-13 17:06:27,359 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-25/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 17:06:27,361 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-25/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 17:06:27,363 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:06:27,363 - src.main - INFO - Fetching new items...
+2025-05-13 17:06:27,364 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 17:06:27,364 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 17:06:27,366 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:06:27,366 - src.main - INFO - Fetching new items...
+2025-05-13 17:06:27,366 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:06:27,366 - src.main - INFO - Detecting sparks...
+2025-05-13 17:06:27,366 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:06:27,366 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:06:27,369 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:06:27,369 - src.main - INFO - Fetching new items...
+2025-05-13 17:06:27,369 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:06:27,369 - src.main - INFO - Detecting sparks...
+2025-05-13 17:06:27,369 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 17:06:27,369 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:06:27,369 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:06:27,369 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:06:27,369 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:06:27,372 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:06:27,372 - src.main - INFO - Fetching new items...
+2025-05-13 17:06:27,372 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:06:27,372 - src.main - INFO - Detecting sparks...
+2025-05-13 17:06:27,372 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 17:06:27,372 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:06:27,372 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:06:27,372 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:06:27,372 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:06:27,374 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:06:27,374 - src.main - INFO - Fetching new items...
+2025-05-13 17:06:27,374 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 17:06:27,374 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:06:27,374 - src.main - INFO - Detecting sparks...
+2025-05-13 17:06:27,374 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:06:27,374 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:06:27,377 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:06:27,377 - src.main - INFO - Fetching new items...
+2025-05-13 17:06:27,377 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:06:27,377 - src.main - INFO - Detecting sparks...
+2025-05-13 17:06:27,377 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 17:06:27,377 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 17:06:27,377 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 17:06:27,377 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:06:27,382 - src.main - INFO - Creating data directory: /tmp/tmpgbczg2e1/nonexistent
+2025-05-13 17:06:27,385 - src.main - INFO - Creating data directory: /tmp/tmp7k4399iq/subdir
+2025-05-13 17:06:27,387 - src.main - WARNING - File not found: /tmp/tmpwedal5_l/nonexistent.json. Returning default.
+2025-05-13 17:06:27,389 - src.main - ERROR - Error decoding JSON from /tmp/tmpps8trvjw/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:06:27,391 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/tmp82e8fmjb/output.md
+2025-05-13 17:06:27,393 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/tmp68cbwvsb/output.md
+2025-05-13 17:06:27,394 - src.main - ERROR - Error saving seeds to Markdown file /invalid/path.md: Cannot write
+Traceback (most recent call last):
+  File "/home/todd/storyspark-agent/src/main.py", line 149, in save_seeds_to_markdown
+    with open(filepath, "w", encoding="utf-8") as f:
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+OSError: Cannot write
+2025-05-13 17:06:27,402 - src.config_loader - INFO - Configuration loaded successfully from 'config.yaml'
+2025-05-13 17:06:27,402 - src.config_loader - INFO - Configuration validated successfully.
+2025-05-13 17:22:52,010 - test.module - INFO - Test message
+2025-05-13 17:22:52,014 - src.main - INFO - Creating data directory: data
+2025-05-13 17:22:52,018 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 17:22:52,019 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-26/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:22:52,020 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-26/test_save_seeds_empty0/test_sparks.md
+2025-05-13 17:22:52,021 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-26/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 17:22:52,022 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-26/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 17:22:52,023 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:22:52,023 - src.main - INFO - Fetching new items...
+2025-05-13 17:22:52,023 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 17:22:52,023 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 17:22:52,025 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:22:52,025 - src.main - INFO - Fetching new items...
+2025-05-13 17:22:52,025 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:22:52,025 - src.main - INFO - Detecting sparks...
+2025-05-13 17:22:52,025 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:22:52,025 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:22:52,027 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:22:52,027 - src.main - INFO - Fetching new items...
+2025-05-13 17:22:52,027 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:22:52,027 - src.main - INFO - Detecting sparks...
+2025-05-13 17:22:52,027 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 17:22:52,027 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:22:52,027 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:22:52,027 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:22:52,027 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:22:52,029 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:22:52,029 - src.main - INFO - Fetching new items...
+2025-05-13 17:22:52,029 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:22:52,029 - src.main - INFO - Detecting sparks...
+2025-05-13 17:22:52,029 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 17:22:52,029 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:22:52,029 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:22:52,029 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:22:52,029 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:22:52,030 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:22:52,030 - src.main - INFO - Fetching new items...
+2025-05-13 17:22:52,030 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 17:22:52,030 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:22:52,031 - src.main - INFO - Detecting sparks...
+2025-05-13 17:22:52,031 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:22:52,031 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:22:52,032 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:22:52,032 - src.main - INFO - Fetching new items...
+2025-05-13 17:22:52,032 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:22:52,032 - src.main - INFO - Detecting sparks...
+2025-05-13 17:22:52,032 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 17:22:52,032 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 17:22:52,032 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 17:22:52,032 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:22:52,035 - src.main - INFO - Creating data directory: /tmp/tmpzbubzuae/nonexistent
+2025-05-13 17:22:52,036 - src.main - INFO - Creating data directory: /tmp/tmpkugwkzvt/subdir
+2025-05-13 17:22:52,037 - src.main - WARNING - File not found: /tmp/tmppi9lslon/nonexistent.json. Returning default.
+2025-05-13 17:22:52,038 - src.main - ERROR - Error decoding JSON from /tmp/tmpe8ake0vu/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:22:52,039 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/tmpep35j1yv/output.md
+2025-05-13 17:22:52,040 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/tmpboyq39sr/output.md
+2025-05-13 17:22:52,041 - src.main - ERROR - Error saving seeds to Markdown file /invalid/path.md: Cannot write
+Traceback (most recent call last):
+  File "/home/todd/storyspark-agent/src/main.py", line 149, in save_seeds_to_markdown
+    with open(filepath, "w", encoding="utf-8") as f:
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+OSError: Cannot write
+2025-05-13 17:22:52,042 - src.config_loader - ERROR - Configuration file not found at '/tmp/tmp7f2rhrn7/nonexistent.yaml'
+2025-05-13 17:22:52,050 - src.config_loader - INFO - Configuration loaded successfully from 'config.yaml'
+2025-05-13 17:22:52,050 - src.config_loader - INFO - Configuration validated successfully.
+2025-05-13 17:26:01,170 - test.module - INFO - Test message
+2025-05-13 17:26:01,174 - src.main - INFO - Creating data directory: data
+2025-05-13 17:26:01,177 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 17:26:01,178 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-27/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:26:01,179 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-27/test_save_seeds_empty0/test_sparks.md
+2025-05-13 17:26:01,180 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-27/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 17:26:01,181 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-27/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 17:26:01,183 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:26:01,183 - src.main - INFO - Fetching new items...
+2025-05-13 17:26:01,183 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 17:26:01,183 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 17:26:01,184 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:26:01,184 - src.main - INFO - Fetching new items...
+2025-05-13 17:26:01,184 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:26:01,184 - src.main - INFO - Detecting sparks...
+2025-05-13 17:26:01,184 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:26:01,185 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:26:01,186 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:26:01,186 - src.main - INFO - Fetching new items...
+2025-05-13 17:26:01,186 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:26:01,186 - src.main - INFO - Detecting sparks...
+2025-05-13 17:26:01,186 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 17:26:01,186 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:26:01,186 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:26:01,186 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:26:01,186 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:26:01,188 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:26:01,188 - src.main - INFO - Fetching new items...
+2025-05-13 17:26:01,188 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:26:01,188 - src.main - INFO - Detecting sparks...
+2025-05-13 17:26:01,188 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 17:26:01,188 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:26:01,188 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:26:01,188 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:26:01,188 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:26:01,190 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:26:01,190 - src.main - INFO - Fetching new items...
+2025-05-13 17:26:01,190 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 17:26:01,190 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:26:01,190 - src.main - INFO - Detecting sparks...
+2025-05-13 17:26:01,190 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:26:01,190 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:26:01,191 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:26:01,191 - src.main - INFO - Fetching new items...
+2025-05-13 17:26:01,192 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:26:01,192 - src.main - INFO - Detecting sparks...
+2025-05-13 17:26:01,192 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 17:26:01,192 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 17:26:01,192 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 17:26:01,192 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:26:01,194 - src.main - INFO - Creating data directory: /tmp/tmp62qjbiz5/nonexistent
+2025-05-13 17:26:01,196 - src.main - INFO - Creating data directory: /tmp/tmppdsrntmg/subdir
+2025-05-13 17:26:01,197 - src.main - WARNING - File not found: /tmp/tmp5_iwjwx1/nonexistent.json. Returning default.
+2025-05-13 17:26:01,197 - src.main - ERROR - Error decoding JSON from /tmp/tmphibf8v36/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:26:01,198 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/tmpilatq4hp/output.md
+2025-05-13 17:26:01,199 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/tmpwtfcrqho/output.md
+2025-05-13 17:26:01,200 - src.main - ERROR - Error saving seeds to Markdown file /invalid/path.md: Cannot write
+Traceback (most recent call last):
+  File "/home/todd/storyspark-agent/src/main.py", line 149, in save_seeds_to_markdown
+    with open(filepath, "w", encoding="utf-8") as f:
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+OSError: Cannot write
+2025-05-13 17:26:01,201 - src.config_loader - ERROR - Configuration file not found at '/tmp/tmp0znph6yh/nonexistent.yaml'
+2025-05-13 17:26:01,209 - src.config_loader - INFO - Configuration loaded successfully from 'config.yaml'
+2025-05-13 17:26:01,209 - src.config_loader - INFO - Configuration validated successfully.
+2025-05-13 17:31:37,307 - test.module - INFO - Test message
+2025-05-13 17:31:37,311 - src.main - INFO - Creating data directory: data
+2025-05-13 17:31:37,315 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 17:31:37,316 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-28/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:31:37,317 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-28/test_save_seeds_empty0/test_sparks.md
+2025-05-13 17:31:37,318 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-28/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 17:31:37,319 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-28/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 17:31:37,320 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:31:37,320 - src.main - INFO - Fetching new items...
+2025-05-13 17:31:37,320 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 17:31:37,320 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 17:31:37,322 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:31:37,322 - src.main - INFO - Fetching new items...
+2025-05-13 17:31:37,322 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:31:37,322 - src.main - INFO - Detecting sparks...
+2025-05-13 17:31:37,322 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:31:37,322 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:31:37,323 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:31:37,323 - src.main - INFO - Fetching new items...
+2025-05-13 17:31:37,324 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:31:37,324 - src.main - INFO - Detecting sparks...
+2025-05-13 17:31:37,324 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 17:31:37,324 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:31:37,324 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:31:37,324 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:31:37,324 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:31:37,325 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:31:37,325 - src.main - INFO - Fetching new items...
+2025-05-13 17:31:37,326 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:31:37,326 - src.main - INFO - Detecting sparks...
+2025-05-13 17:31:37,326 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 17:31:37,326 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:31:37,326 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:31:37,326 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:31:37,326 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:31:37,327 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:31:37,327 - src.main - INFO - Fetching new items...
+2025-05-13 17:31:37,327 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 17:31:37,327 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:31:37,327 - src.main - INFO - Detecting sparks...
+2025-05-13 17:31:37,328 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:31:37,328 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:31:37,329 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:31:37,329 - src.main - INFO - Fetching new items...
+2025-05-13 17:31:37,329 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:31:37,329 - src.main - INFO - Detecting sparks...
+2025-05-13 17:31:37,329 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 17:31:37,329 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 17:31:37,329 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 17:31:37,329 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:31:37,332 - src.main - INFO - Creating data directory: /tmp/tmpasm2lnre/nonexistent
+2025-05-13 17:31:37,333 - src.main - INFO - Creating data directory: /tmp/tmprztih826/subdir
+2025-05-13 17:31:37,334 - src.main - WARNING - File not found: /tmp/tmp8jrj4yai/nonexistent.json. Returning default.
+2025-05-13 17:31:37,335 - src.main - ERROR - Error decoding JSON from /tmp/tmpdoimegnu/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:31:37,336 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/tmpo22t52_r/output.md
+2025-05-13 17:31:37,337 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/tmpk14byrsp/output.md
+2025-05-13 17:31:37,338 - src.main - ERROR - Error saving seeds to Markdown file /invalid/path.md: Cannot write
+Traceback (most recent call last):
+  File "/home/todd/storyspark-agent/src/main.py", line 149, in save_seeds_to_markdown
+    with open(filepath, "w", encoding="utf-8") as f:
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+OSError: Cannot write
+2025-05-13 17:31:37,339 - src.config_loader - ERROR - Configuration file not found at '/tmp/tmplxa2yj_x/nonexistent.yaml'
+2025-05-13 17:31:37,347 - src.config_loader - INFO - Configuration loaded successfully from 'config.yaml'
+2025-05-13 17:31:37,347 - src.config_loader - INFO - Configuration validated successfully.
+2025-05-13 17:36:14,254 - test.module - INFO - Test message
+2025-05-13 17:36:14,256 - src.main - INFO - Creating data directory: data
+2025-05-13 17:36:14,259 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 17:36:14,260 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-29/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:36:14,260 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-29/test_save_seeds_empty0/test_sparks.md
+2025-05-13 17:36:14,261 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-29/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 17:36:14,262 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-29/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 17:36:14,263 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:36:14,263 - src.main - INFO - Fetching new items...
+2025-05-13 17:36:14,263 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 17:36:14,263 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 17:36:14,265 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:36:14,265 - src.main - INFO - Fetching new items...
+2025-05-13 17:36:14,265 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:36:14,265 - src.main - INFO - Detecting sparks...
+2025-05-13 17:36:14,265 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:36:14,265 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:36:14,266 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:36:14,266 - src.main - INFO - Fetching new items...
+2025-05-13 17:36:14,266 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:36:14,266 - src.main - INFO - Detecting sparks...
+2025-05-13 17:36:14,266 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 17:36:14,266 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:36:14,266 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:36:14,266 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:36:14,266 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:36:14,267 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:36:14,267 - src.main - INFO - Fetching new items...
+2025-05-13 17:36:14,267 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:36:14,267 - src.main - INFO - Detecting sparks...
+2025-05-13 17:36:14,267 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 17:36:14,267 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:36:14,267 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:36:14,267 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:36:14,267 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:36:14,268 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:36:14,268 - src.main - INFO - Fetching new items...
+2025-05-13 17:36:14,268 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 17:36:14,268 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:36:14,268 - src.main - INFO - Detecting sparks...
+2025-05-13 17:36:14,268 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:36:14,268 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:36:14,269 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:36:14,269 - src.main - INFO - Fetching new items...
+2025-05-13 17:36:14,270 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:36:14,270 - src.main - INFO - Detecting sparks...
+2025-05-13 17:36:14,270 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 17:36:14,270 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 17:36:14,270 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 17:36:14,270 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:36:14,271 - src.main - INFO - Creating data directory: /tmp/tmpowy_6ggs/nonexistent
+2025-05-13 17:36:14,273 - src.main - INFO - Creating data directory: /tmp/tmpql_lba04/subdir
+2025-05-13 17:36:14,273 - src.main - WARNING - File not found: /tmp/tmpcqkln_il/nonexistent.json. Returning default.
+2025-05-13 17:36:14,274 - src.main - ERROR - Error decoding JSON from /tmp/tmpuqdn5goq/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:36:14,275 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/tmpn84j0tmg/output.md
+2025-05-13 17:36:14,275 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/tmpxoexwiab/output.md
+2025-05-13 17:36:14,276 - src.main - ERROR - Error saving seeds to Markdown file /invalid/path.md: Cannot write
+Traceback (most recent call last):
+  File "/home/todd/storyspark-agent/src/main.py", line 149, in save_seeds_to_markdown
+    with open(filepath, "w", encoding="utf-8") as f:
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+OSError: Cannot write
+2025-05-13 17:36:14,277 - src.config_loader - ERROR - Configuration file not found at '/tmp/tmps4mpiosd/nonexistent.yaml'
+2025-05-13 17:36:14,281 - src.config_loader - INFO - Configuration loaded successfully from 'config.yaml'
+2025-05-13 17:36:14,281 - src.config_loader - INFO - Configuration validated successfully.
+2025-05-13 17:36:32,399 - test.module - INFO - Test message
+2025-05-13 17:36:32,402 - src.main - INFO - Creating data directory: data
+2025-05-13 17:36:32,404 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 17:36:32,405 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-30/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:36:32,406 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-30/test_save_seeds_empty0/test_sparks.md
+2025-05-13 17:36:32,407 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-30/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 17:36:32,407 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-30/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 17:36:32,408 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:36:32,408 - src.main - INFO - Fetching new items...
+2025-05-13 17:36:32,408 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 17:36:32,408 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 17:36:32,410 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:36:32,410 - src.main - INFO - Fetching new items...
+2025-05-13 17:36:32,410 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:36:32,410 - src.main - INFO - Detecting sparks...
+2025-05-13 17:36:32,410 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:36:32,410 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:36:32,411 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:36:32,411 - src.main - INFO - Fetching new items...
+2025-05-13 17:36:32,411 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:36:32,411 - src.main - INFO - Detecting sparks...
+2025-05-13 17:36:32,411 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 17:36:32,411 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:36:32,411 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:36:32,411 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:36:32,411 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:36:32,412 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:36:32,412 - src.main - INFO - Fetching new items...
+2025-05-13 17:36:32,412 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:36:32,412 - src.main - INFO - Detecting sparks...
+2025-05-13 17:36:32,412 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 17:36:32,412 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:36:32,412 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:36:32,412 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:36:32,412 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:36:32,413 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:36:32,413 - src.main - INFO - Fetching new items...
+2025-05-13 17:36:32,413 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 17:36:32,413 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:36:32,413 - src.main - INFO - Detecting sparks...
+2025-05-13 17:36:32,413 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:36:32,413 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:36:32,414 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:36:32,414 - src.main - INFO - Fetching new items...
+2025-05-13 17:36:32,415 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:36:32,415 - src.main - INFO - Detecting sparks...
+2025-05-13 17:36:32,415 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 17:36:32,415 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 17:36:32,415 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 17:36:32,415 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:36:32,417 - src.main - INFO - Creating data directory: /tmp/tmpe3cemwcs/nonexistent
+2025-05-13 17:36:32,418 - src.main - INFO - Creating data directory: /tmp/tmpg8i5zpz2/subdir
+2025-05-13 17:36:32,419 - src.main - WARNING - File not found: /tmp/tmpiw95glno/nonexistent.json. Returning default.
+2025-05-13 17:36:32,419 - src.main - ERROR - Error decoding JSON from /tmp/tmp47z9zsjc/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:36:32,420 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/tmpat557lvp/output.md
+2025-05-13 17:36:32,420 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/tmpzv5honk9/output.md
+2025-05-13 17:36:32,421 - src.main - ERROR - Error saving seeds to Markdown file /invalid/path.md: Cannot write
+Traceback (most recent call last):
+  File "/home/todd/storyspark-agent/src/main.py", line 149, in save_seeds_to_markdown
+    with open(filepath, "w", encoding="utf-8") as f:
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+OSError: Cannot write
+2025-05-13 17:36:32,422 - src.config_loader - ERROR - Configuration file not found at '/tmp/tmpe7ceb_79/nonexistent.yaml'
+2025-05-13 17:36:32,426 - src.config_loader - INFO - Configuration loaded successfully from 'config.yaml'
+2025-05-13 17:36:32,426 - src.config_loader - INFO - Configuration validated successfully.
+2025-05-13 17:38:02,639 - test.module - INFO - Test message
+2025-05-13 17:38:02,642 - src.main - INFO - Creating data directory: data
+2025-05-13 17:38:02,644 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 17:38:02,645 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-31/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:38:02,646 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-31/test_save_seeds_empty0/test_sparks.md
+2025-05-13 17:38:02,646 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-31/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 17:38:02,647 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-31/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 17:38:02,648 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:38:02,648 - src.main - INFO - Fetching new items...
+2025-05-13 17:38:02,648 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 17:38:02,648 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 17:38:02,649 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:38:02,649 - src.main - INFO - Fetching new items...
+2025-05-13 17:38:02,649 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:38:02,649 - src.main - INFO - Detecting sparks...
+2025-05-13 17:38:02,649 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:38:02,649 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:38:02,650 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:38:02,650 - src.main - INFO - Fetching new items...
+2025-05-13 17:38:02,650 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:38:02,650 - src.main - INFO - Detecting sparks...
+2025-05-13 17:38:02,650 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 17:38:02,650 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:38:02,650 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:38:02,650 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:38:02,650 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:38:02,651 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:38:02,651 - src.main - INFO - Fetching new items...
+2025-05-13 17:38:02,651 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:38:02,651 - src.main - INFO - Detecting sparks...
+2025-05-13 17:38:02,651 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 17:38:02,651 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:38:02,651 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:38:02,651 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:38:02,652 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:38:02,652 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:38:02,652 - src.main - INFO - Fetching new items...
+2025-05-13 17:38:02,652 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 17:38:02,652 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:38:02,652 - src.main - INFO - Detecting sparks...
+2025-05-13 17:38:02,653 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:38:02,653 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:38:02,654 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:38:02,654 - src.main - INFO - Fetching new items...
+2025-05-13 17:38:02,654 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:38:02,654 - src.main - INFO - Detecting sparks...
+2025-05-13 17:38:02,654 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 17:38:02,654 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 17:38:02,654 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 17:38:02,654 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:38:02,656 - src.main - INFO - Creating data directory: /tmp/tmp2t7t63hc/nonexistent
+2025-05-13 17:38:02,657 - src.main - INFO - Creating data directory: /tmp/tmp0f2p6_5x/subdir
+2025-05-13 17:38:02,658 - src.main - WARNING - File not found: /tmp/tmp5tpths43/nonexistent.json. Returning default.
+2025-05-13 17:38:02,658 - src.main - ERROR - Error decoding JSON from /tmp/tmp56plj9m0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:38:02,659 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/tmpcjpxaatl/output.md
+2025-05-13 17:38:02,659 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/tmpamknu6hq/output.md
+2025-05-13 17:38:02,660 - src.main - ERROR - Error saving seeds to Markdown file /invalid/path.md: Cannot write
+Traceback (most recent call last):
+  File "/home/todd/storyspark-agent/src/main.py", line 149, in save_seeds_to_markdown
+    with open(filepath, "w", encoding="utf-8") as f:
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+OSError: Cannot write
+2025-05-13 17:38:02,661 - src.config_loader - ERROR - Configuration file not found at '/tmp/tmpmgapm3ti/nonexistent.yaml'
+2025-05-13 17:38:02,665 - src.config_loader - INFO - Configuration loaded successfully from 'config.yaml'
+2025-05-13 17:38:02,665 - src.config_loader - INFO - Configuration validated successfully.
+2025-05-13 17:39:53,334 - test.module - INFO - Test message
+2025-05-13 17:39:53,337 - src.main - INFO - Creating data directory: data
+2025-05-13 17:39:53,339 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 17:39:53,340 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-32/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:39:53,340 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-32/test_save_seeds_empty0/test_sparks.md
+2025-05-13 17:39:53,341 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-32/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 17:39:53,342 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-32/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 17:39:53,343 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:39:53,343 - src.main - INFO - Fetching new items...
+2025-05-13 17:39:53,343 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 17:39:53,343 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 17:39:53,344 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:39:53,344 - src.main - INFO - Fetching new items...
+2025-05-13 17:39:53,344 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:39:53,344 - src.main - INFO - Detecting sparks...
+2025-05-13 17:39:53,344 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:39:53,344 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:39:53,345 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:39:53,345 - src.main - INFO - Fetching new items...
+2025-05-13 17:39:53,345 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:39:53,345 - src.main - INFO - Detecting sparks...
+2025-05-13 17:39:53,345 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 17:39:53,345 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:39:53,345 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:39:53,345 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:39:53,345 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:39:53,346 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:39:53,347 - src.main - INFO - Fetching new items...
+2025-05-13 17:39:53,347 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:39:53,347 - src.main - INFO - Detecting sparks...
+2025-05-13 17:39:53,347 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 17:39:53,347 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:39:53,347 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:39:53,347 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:39:53,347 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:39:53,348 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:39:53,348 - src.main - INFO - Fetching new items...
+2025-05-13 17:39:53,348 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 17:39:53,348 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:39:53,348 - src.main - INFO - Detecting sparks...
+2025-05-13 17:39:53,348 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:39:53,348 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:39:53,349 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:39:53,349 - src.main - INFO - Fetching new items...
+2025-05-13 17:39:53,349 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:39:53,350 - src.main - INFO - Detecting sparks...
+2025-05-13 17:39:53,350 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 17:39:53,350 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 17:39:53,350 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 17:39:53,350 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:39:53,351 - src.main - INFO - Creating data directory: /tmp/tmpggtp0fav/nonexistent
+2025-05-13 17:39:53,353 - src.main - INFO - Creating data directory: /tmp/tmp0dstlx7c/subdir
+2025-05-13 17:39:53,353 - src.main - WARNING - File not found: /tmp/tmpf3j_filu/nonexistent.json. Returning default.
+2025-05-13 17:39:53,354 - src.main - ERROR - Error decoding JSON from /tmp/tmpqj8p8kz1/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:39:53,355 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/tmpmsbaulvp/output.md
+2025-05-13 17:39:53,355 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/tmp6c05isqe/output.md
+2025-05-13 17:39:53,356 - src.main - ERROR - Error saving seeds to Markdown file /invalid/path.md: Cannot write
+Traceback (most recent call last):
+  File "/home/todd/storyspark-agent/src/main.py", line 149, in save_seeds_to_markdown
+    with open(filepath, "w", encoding="utf-8") as f:
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+OSError: Cannot write
+2025-05-13 17:39:53,357 - src.config_loader - ERROR - Configuration file not found at '/tmp/tmp244p3ct1/nonexistent.yaml'
+2025-05-13 17:39:53,361 - src.config_loader - INFO - Configuration loaded successfully from 'config.yaml'
+2025-05-13 17:39:53,361 - src.config_loader - INFO - Configuration validated successfully.
+2025-05-13 17:40:01,255 - test.module - INFO - Test message
+2025-05-13 17:40:01,259 - src.main - INFO - Creating data directory: data
+2025-05-13 17:40:01,263 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 17:40:01,264 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-33/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:40:01,265 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-33/test_save_seeds_empty0/test_sparks.md
+2025-05-13 17:40:01,266 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-33/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 17:40:01,267 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-33/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 17:40:01,269 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:40:01,269 - src.main - INFO - Fetching new items...
+2025-05-13 17:40:01,269 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 17:40:01,269 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 17:40:01,271 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:40:01,271 - src.main - INFO - Fetching new items...
+2025-05-13 17:40:01,271 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:40:01,271 - src.main - INFO - Detecting sparks...
+2025-05-13 17:40:01,271 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:40:01,271 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:40:01,273 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:40:01,273 - src.main - INFO - Fetching new items...
+2025-05-13 17:40:01,273 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:40:01,273 - src.main - INFO - Detecting sparks...
+2025-05-13 17:40:01,273 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 17:40:01,273 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:40:01,273 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:40:01,273 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:40:01,273 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:40:01,275 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:40:01,275 - src.main - INFO - Fetching new items...
+2025-05-13 17:40:01,275 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:40:01,275 - src.main - INFO - Detecting sparks...
+2025-05-13 17:40:01,275 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 17:40:01,275 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:40:01,275 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:40:01,275 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:40:01,275 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:40:01,277 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:40:01,277 - src.main - INFO - Fetching new items...
+2025-05-13 17:40:01,277 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 17:40:01,277 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:40:01,277 - src.main - INFO - Detecting sparks...
+2025-05-13 17:40:01,277 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:40:01,278 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:40:01,279 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:40:01,279 - src.main - INFO - Fetching new items...
+2025-05-13 17:40:01,279 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:40:01,279 - src.main - INFO - Detecting sparks...
+2025-05-13 17:40:01,279 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 17:40:01,279 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 17:40:01,279 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 17:40:01,280 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:40:01,282 - src.main - INFO - Creating data directory: /tmp/tmpj1cmx4l8/nonexistent
+2025-05-13 17:40:01,284 - src.main - INFO - Creating data directory: /tmp/tmpn5h_ndnj/subdir
+2025-05-13 17:40:01,285 - src.main - WARNING - File not found: /tmp/tmp5fn76tvd/nonexistent.json. Returning default.
+2025-05-13 17:40:01,286 - src.main - ERROR - Error decoding JSON from /tmp/tmp6p34pyzr/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:40:01,287 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/tmp6txsck1p/output.md
+2025-05-13 17:40:01,288 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/tmpeh734ojy/output.md
+2025-05-13 17:40:01,289 - src.main - ERROR - Error saving seeds to Markdown file /invalid/path.md: Cannot write
+Traceback (most recent call last):
+  File "/home/todd/storyspark-agent/src/main.py", line 149, in save_seeds_to_markdown
+    with open(filepath, "w", encoding="utf-8") as f:
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+OSError: Cannot write
+2025-05-13 17:40:01,290 - src.config_loader - ERROR - Configuration file not found at '/tmp/tmpn5kwaudo/nonexistent.yaml'
+2025-05-13 17:40:01,297 - src.config_loader - INFO - Configuration loaded successfully from 'config.yaml'
+2025-05-13 17:40:01,297 - src.config_loader - INFO - Configuration validated successfully.
+2025-05-13 17:40:15,210 - test.module - INFO - Test message
+2025-05-13 17:40:15,212 - src.main - INFO - Creating data directory: data
+2025-05-13 17:40:15,215 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 17:40:15,216 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-34/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:40:15,216 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-34/test_save_seeds_empty0/test_sparks.md
+2025-05-13 17:40:15,217 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-34/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 17:40:15,218 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-34/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 17:40:15,219 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:40:15,219 - src.main - INFO - Fetching new items...
+2025-05-13 17:40:15,219 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 17:40:15,219 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 17:40:15,220 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:40:15,220 - src.main - INFO - Fetching new items...
+2025-05-13 17:40:15,220 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:40:15,220 - src.main - INFO - Detecting sparks...
+2025-05-13 17:40:15,220 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:40:15,220 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:40:15,221 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:40:15,221 - src.main - INFO - Fetching new items...
+2025-05-13 17:40:15,221 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:40:15,221 - src.main - INFO - Detecting sparks...
+2025-05-13 17:40:15,221 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 17:40:15,221 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:40:15,221 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:40:15,221 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:40:15,221 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:40:15,222 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:40:15,222 - src.main - INFO - Fetching new items...
+2025-05-13 17:40:15,222 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:40:15,222 - src.main - INFO - Detecting sparks...
+2025-05-13 17:40:15,222 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 17:40:15,223 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:40:15,223 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:40:15,223 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:40:15,223 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:40:15,223 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:40:15,223 - src.main - INFO - Fetching new items...
+2025-05-13 17:40:15,224 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 17:40:15,224 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:40:15,224 - src.main - INFO - Detecting sparks...
+2025-05-13 17:40:15,224 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:40:15,224 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:40:15,225 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:40:15,225 - src.main - INFO - Fetching new items...
+2025-05-13 17:40:15,225 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:40:15,225 - src.main - INFO - Detecting sparks...
+2025-05-13 17:40:15,225 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 17:40:15,225 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 17:40:15,225 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 17:40:15,225 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:40:15,227 - src.main - INFO - Creating data directory: /tmp/tmps6fp7lm7/nonexistent
+2025-05-13 17:40:15,228 - src.main - INFO - Creating data directory: /tmp/tmph81r_pp2/subdir
+2025-05-13 17:40:15,229 - src.main - WARNING - File not found: /tmp/tmp5o2vudqj/nonexistent.json. Returning default.
+2025-05-13 17:40:15,230 - src.main - ERROR - Error decoding JSON from /tmp/tmp70ozccck/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:40:15,230 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/tmp_q74xcjj/output.md
+2025-05-13 17:40:15,231 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/tmpqoa5u94_/output.md
+2025-05-13 17:40:15,232 - src.main - ERROR - Error saving seeds to Markdown file /invalid/path.md: Cannot write
+Traceback (most recent call last):
+  File "/home/todd/storyspark-agent/src/main.py", line 149, in save_seeds_to_markdown
+    with open(filepath, "w", encoding="utf-8") as f:
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+OSError: Cannot write
+2025-05-13 17:40:15,233 - src.config_loader - ERROR - Configuration file not found at '/tmp/tmphscjh5lx/nonexistent.yaml'
+2025-05-13 17:40:15,237 - src.config_loader - INFO - Configuration loaded successfully from 'config.yaml'
+2025-05-13 17:40:15,237 - src.config_loader - INFO - Configuration validated successfully.
+2025-05-13 17:50:48,701 - test.module - INFO - Test message
+2025-05-13 17:50:48,704 - src.main - INFO - Creating data directory: data
+2025-05-13 17:50:48,707 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 17:50:48,708 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-35/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:50:48,708 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-35/test_save_seeds_empty0/test_sparks.md
+2025-05-13 17:50:48,709 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-35/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 17:50:48,710 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-35/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 17:50:48,711 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:50:48,711 - src.main - INFO - Fetching new items...
+2025-05-13 17:50:48,711 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 17:50:48,711 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 17:50:48,712 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:50:48,712 - src.main - INFO - Fetching new items...
+2025-05-13 17:50:48,712 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:50:48,712 - src.main - INFO - Detecting sparks...
+2025-05-13 17:50:48,712 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:50:48,712 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:50:48,713 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:50:48,713 - src.main - INFO - Fetching new items...
+2025-05-13 17:50:48,713 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:50:48,713 - src.main - INFO - Detecting sparks...
+2025-05-13 17:50:48,713 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 17:50:48,713 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:50:48,713 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:50:48,713 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:50:48,713 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:50:48,714 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:50:48,714 - src.main - INFO - Fetching new items...
+2025-05-13 17:50:48,714 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:50:48,714 - src.main - INFO - Detecting sparks...
+2025-05-13 17:50:48,715 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 17:50:48,715 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:50:48,715 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:50:48,715 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:50:48,715 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:50:48,715 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:50:48,715 - src.main - INFO - Fetching new items...
+2025-05-13 17:50:48,716 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 17:50:48,716 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:50:48,716 - src.main - INFO - Detecting sparks...
+2025-05-13 17:50:48,716 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:50:48,716 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:50:48,717 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:50:48,717 - src.main - INFO - Fetching new items...
+2025-05-13 17:50:48,717 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:50:48,717 - src.main - INFO - Detecting sparks...
+2025-05-13 17:50:48,717 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 17:50:48,717 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 17:50:48,717 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 17:50:48,717 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:50:48,719 - src.main - INFO - Creating data directory: /tmp/tmpg3up4hq9/nonexistent
+2025-05-13 17:50:48,720 - src.main - INFO - Creating data directory: /tmp/tmpz195t4hb/subdir
+2025-05-13 17:50:48,721 - src.main - WARNING - File not found: /tmp/tmpxuxpxnj9/nonexistent.json. Returning default.
+2025-05-13 17:50:48,721 - src.main - ERROR - Error decoding JSON from /tmp/tmpzkk9c9_f/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:50:48,722 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/tmpuzs7iikx/output.md
+2025-05-13 17:50:48,723 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/tmpr7rhsr4r/output.md
+2025-05-13 17:50:48,723 - src.main - ERROR - Error saving seeds to Markdown file /invalid/path.md: Cannot write
+Traceback (most recent call last):
+  File "/home/todd/storyspark-agent/src/main.py", line 149, in save_seeds_to_markdown
+    with open(filepath, "w", encoding="utf-8") as f:
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+OSError: Cannot write
+2025-05-13 17:50:48,727 - src.config_loader - INFO - Configuration loaded successfully from 'config.yaml'
+2025-05-13 17:50:48,727 - src.config_loader - INFO - Configuration validated successfully.
+2025-05-13 17:51:47,810 - test.module - INFO - Test message
+2025-05-13 17:51:47,815 - src.main - INFO - Creating data directory: data
+2025-05-13 17:51:47,818 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 17:51:47,819 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-36/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:51:47,820 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-36/test_save_seeds_empty0/test_sparks.md
+2025-05-13 17:51:47,821 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-36/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 17:51:47,822 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-36/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 17:51:47,824 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:51:47,824 - src.main - INFO - Fetching new items...
+2025-05-13 17:51:47,824 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 17:51:47,824 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 17:51:47,825 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:51:47,826 - src.main - INFO - Fetching new items...
+2025-05-13 17:51:47,826 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:51:47,826 - src.main - INFO - Detecting sparks...
+2025-05-13 17:51:47,826 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:51:47,826 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:51:47,827 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:51:47,827 - src.main - INFO - Fetching new items...
+2025-05-13 17:51:47,827 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:51:47,827 - src.main - INFO - Detecting sparks...
+2025-05-13 17:51:47,827 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 17:51:47,827 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:51:47,827 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:51:47,828 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:51:47,828 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:51:47,829 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:51:47,829 - src.main - INFO - Fetching new items...
+2025-05-13 17:51:47,829 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:51:47,829 - src.main - INFO - Detecting sparks...
+2025-05-13 17:51:47,829 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 17:51:47,829 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:51:47,829 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:51:47,829 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:51:47,829 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:51:47,831 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:51:47,831 - src.main - INFO - Fetching new items...
+2025-05-13 17:51:47,831 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 17:51:47,831 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:51:47,831 - src.main - INFO - Detecting sparks...
+2025-05-13 17:51:47,831 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:51:47,831 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:51:47,832 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:51:47,832 - src.main - INFO - Fetching new items...
+2025-05-13 17:51:47,832 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:51:47,832 - src.main - INFO - Detecting sparks...
+2025-05-13 17:51:47,832 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 17:51:47,832 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 17:51:47,833 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 17:51:47,833 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:51:47,835 - src.main - INFO - Creating data directory: /tmp/tmp0ewz053f/nonexistent
+2025-05-13 17:51:47,836 - src.main - INFO - Creating data directory: /tmp/tmpu981x3db/subdir
+2025-05-13 17:51:47,837 - src.main - WARNING - File not found: /tmp/tmpxqzhq5z0/nonexistent.json. Returning default.
+2025-05-13 17:51:47,838 - src.main - ERROR - Error decoding JSON from /tmp/tmprnr35w_t/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:51:47,839 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/tmpri6j4xak/output.md
+2025-05-13 17:51:47,840 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/tmpeaplstxm/output.md
+2025-05-13 17:51:47,841 - src.main - ERROR - Error saving seeds to Markdown file /invalid/path.md: Cannot write
+Traceback (most recent call last):
+  File "/home/todd/storyspark-agent/src/main.py", line 149, in save_seeds_to_markdown
+    with open(filepath, "w", encoding="utf-8") as f:
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+OSError: Cannot write
+2025-05-13 17:51:47,847 - src.config_loader - INFO - Configuration loaded successfully from 'config.yaml'
+2025-05-13 17:51:47,847 - src.config_loader - INFO - Configuration validated successfully.
+2025-05-13 17:52:47,359 - test.module - INFO - Test message
+2025-05-13 17:52:47,363 - src.main - INFO - Creating data directory: data
+2025-05-13 17:52:47,367 - src.main - WARNING - File not found: /nonexistent/file.json. Returning default.
+2025-05-13 17:52:47,368 - src.main - ERROR - Error decoding JSON from /tmp/pytest-of-todd/pytest-37/test_load_json_invalid_format0/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:52:47,369 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/pytest-of-todd/pytest-37/test_save_seeds_empty0/test_sparks.md
+2025-05-13 17:52:47,370 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/pytest-of-todd/pytest-37/test_save_seeds_with_data0/test_sparks.md
+2025-05-13 17:52:47,371 - src.main - INFO - Successfully saved 2 seeds to Markdown: /tmp/pytest-of-todd/pytest-37/test_save_seeds_multiple0/test_sparks.md
+2025-05-13 17:52:47,373 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:52:47,373 - src.main - INFO - Fetching new items...
+2025-05-13 17:52:47,373 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 17:52:47,373 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 17:52:47,375 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:52:47,375 - src.main - INFO - Fetching new items...
+2025-05-13 17:52:47,375 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:52:47,375 - src.main - INFO - Detecting sparks...
+2025-05-13 17:52:47,375 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:52:47,375 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:52:47,376 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:52:47,377 - src.main - INFO - Fetching new items...
+2025-05-13 17:52:47,377 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:52:47,377 - src.main - INFO - Detecting sparks...
+2025-05-13 17:52:47,377 - src.main - INFO - Generating story seeds for 2 sparks...
+2025-05-13 17:52:47,377 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:52:47,377 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:52:47,377 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:52:47,377 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:52:47,378 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:52:47,378 - src.main - INFO - Fetching new items...
+2025-05-13 17:52:47,378 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:52:47,379 - src.main - INFO - Detecting sparks...
+2025-05-13 17:52:47,379 - src.main - INFO - Limiting seed generation to 2 sparks (out of 4 detected).
+2025-05-13 17:52:47,379 - src.main - INFO - Successfully generated seed for spark: test1
+2025-05-13 17:52:47,379 - src.main - INFO - Successfully generated seed for spark: test2
+2025-05-13 17:52:47,379 - src.main - INFO - Generated 2 story seeds.
+2025-05-13 17:52:47,379 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:52:47,380 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:52:47,380 - src.main - INFO - Fetching new items...
+2025-05-13 17:52:47,380 - src.main - INFO - Purged 1 old items from history (older than 7 days).
+2025-05-13 17:52:47,380 - src.main - INFO - History contains 2 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:52:47,380 - src.main - INFO - Detecting sparks...
+2025-05-13 17:52:47,380 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 17:52:47,380 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 17:52:47,382 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 17:52:47,382 - src.main - INFO - Fetching new items...
+2025-05-13 17:52:47,382 - src.main - INFO - History contains 3 items (after update/purge). Using 1 for baseline comparison.
+2025-05-13 17:52:47,382 - src.main - INFO - Detecting sparks...
+2025-05-13 17:52:47,382 - src.main - INFO - Generating story seeds for 1 sparks...
+2025-05-13 17:52:47,382 - src.main - ERROR - Failed to configure Gemini API. Skipping seed generation.
+2025-05-13 17:52:47,382 - src.main - INFO - Generated 0 story seeds.
+2025-05-13 17:52:47,382 - src.main - INFO - --- Agent Cycle Complete ---
+2025-05-13 17:52:47,384 - src.main - INFO - Creating data directory: /tmp/tmp5gqbyafl/nonexistent
+2025-05-13 17:52:47,386 - src.main - INFO - Creating data directory: /tmp/tmp3obyxwu1/subdir
+2025-05-13 17:52:47,387 - src.main - WARNING - File not found: /tmp/tmp93vfb2bq/nonexistent.json. Returning default.
+2025-05-13 17:52:47,388 - src.main - ERROR - Error decoding JSON from /tmp/tmpgy7c2wt6/invalid.json: Expecting value: line 1 column 1 (char 0). Returning default.
+2025-05-13 17:52:47,388 - src.main - INFO - Successfully saved 0 seeds to Markdown: /tmp/tmp2oe6ytv_/output.md
+2025-05-13 17:52:47,389 - src.main - INFO - Successfully saved 1 seeds to Markdown: /tmp/tmp_35ajv60/output.md
+2025-05-13 17:52:47,390 - src.main - ERROR - Error saving seeds to Markdown file /invalid/path.md: Cannot write
+Traceback (most recent call last):
+  File "/home/todd/storyspark-agent/src/main.py", line 149, in save_seeds_to_markdown
+    with open(filepath, "w", encoding="utf-8") as f:
+  File "/usr/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/usr/lib/python3.10/unittest/mock.py", line 1173, in _execute_mock_call
+    raise effect
+OSError: Cannot write
+2025-05-13 17:52:47,398 - src.config_loader - INFO - Configuration loaded successfully from 'config.yaml'
+2025-05-13 17:52:47,398 - src.config_loader - INFO - Configuration validated successfully.

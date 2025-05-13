@@ -1,6 +1,14 @@
 # StorySpark Agent
 
+[![Version](https://img.shields.io/badge/version-0.8.0-blue.svg)](https://github.com/Nazuna-io/storyspark-agent/releases)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+[![Tests](https://github.com/Nazuna-io/storyspark-agent/actions/workflows/test.yml/badge.svg)](https://github.com/Nazuna-io/storyspark-agent/actions)
+[![Coverage](https://img.shields.io/badge/coverage-88%25-brightgreen.svg)](https://codecov.io/gh/Nazuna-io/storyspark-agent)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 An AI-powered agent that monitors Reddit and RSS feeds for trending topics ("sparks") and generates story ideas using Google's Gemini AI.
+
+> **⚠️ Beta Software**: This is version 0.8.0 - a beta release with limited functionality. See [Current Limitations](#current-limitations) below.
 
 ## Features
 
@@ -180,6 +188,30 @@ A researcher discovers quantum entanglement can transmit consciousness between p
 - Quantum consciousness
 - Identity paradox
 ```
+
+## Current Limitations (v0.8.0)
+
+This beta release has the following limitations:
+
+- **Append-only file operations**: Data is only appended to files, not updated
+- **CLI interface only**: No graphical user interface available
+- **Google Gemini only**: Only supports Google's Gemini AI for story generation
+- **Fixed scheduling**: Reports run hourly (not customizable)
+- **No email notifications**: Output is saved to files only
+
+## Roadmap
+
+Planned features for future releases:
+
+- [ ] Email report functionality
+- [ ] Customizable report frequency
+- [ ] PyPI package distribution
+- [ ] Gradio web UI for browsing and searching sparks
+- [ ] Multiple AI provider support (OpenAI, Anthropic, etc.)
+- [ ] Database storage options
+- [ ] RESTful API endpoints
+- [ ] Docker containerization
+- [ ] Real-time monitoring dashboard
 
 ## Contributing
 

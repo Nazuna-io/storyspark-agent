@@ -15,9 +15,11 @@ def test_configure_genai_already_configured():
 def test_configure_genai_no_api_key():
     """Test configure_genai when API key is missing."""
     with patch.dict(os.environ, {}, clear=True):
-        with patch("src.story_seed_generator._genai_configured", False):
-            result = configure_genai()
-            assert result is False
+        with patch("src.story_seed_generator.load_dotenv") as mock_load_dotenv:
+            mock_load_dotenv.return_value = None  # Simulates no .env file
+            with patch("src.story_seed_generator._genai_configured", False):
+                result = configure_genai()
+                assert result is False
 
 
 def test_configure_genai_exception():
