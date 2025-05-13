@@ -50,9 +50,10 @@ cover/
 
 # Translations
 *.mo
-*.pot_*
+*.pot
 
 # Django stuff:
+*.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -80,7 +81,7 @@ ipython_config.py
 # pyenv
 .python-version
 
-# PEP 582; used by PDM, Flit and potentially other packaging tools
+# PEP 582
 __pypackages__/
 
 # Celery stuff
@@ -106,6 +107,14 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
 # Pyre type checker
 .pyre/
 
@@ -115,5 +124,27 @@ venv.bak/
 # Cython debug symbols
 cython_debug/
 
-# StorySpark Agent specific
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# StorySpark Agent specific files
 fetcher_state.json
+data/
+agent.log
+test_agent.log
+test_debug.log
+*.log
+story_sparks.md
+
+# Temporary files
+*.tmp
+*.bak
+*.swp

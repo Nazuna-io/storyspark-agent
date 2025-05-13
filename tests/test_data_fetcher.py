@@ -122,31 +122,51 @@ class TestFetchRss:
         time_tuple2 = time.struct_time((2024, 1, 3, 12, 0, 0, 0, 0, 0))
         
         # Mock feed response
+        entry1 = Mock()
+        entry1.configure_mock(**{
+            'title': 'Test Article 1',
+            'link': 'http://example.com/1',
+            'id': 'item1',
+            'published_parsed': time_tuple1,
+            'summary': 'Summary 1',
+            'description': 'Description 1',
+            'get': lambda key, default=None: {
+                'title': 'Test Article 1',
+                'link': 'http://example.com/1',
+                'id': 'item1',
+                'published_parsed': time_tuple1,
+                'summary': 'Summary 1',
+                'description': 'Description 1',
+            }.get(key, default)
+        })
+        
+        entry2 = Mock()
+        entry2.configure_mock(**{
+            'title': 'Test Article 2',
+            'link': 'http://example.com/2',
+            'id': 'item2',
+            'published_parsed': time_tuple2,
+            'summary': 'Summary 2',
+            'description': 'Description 2',
+            'get': lambda key, default=None: {
+                'title': 'Test Article 2',
+                'link': 'http://example.com/2',
+                'id': 'item2',
+                'published_parsed': time_tuple2,
+                'summary': 'Summary 2',
+                'description': 'Description 2',
+            }.get(key, default)
+        })
+        
         mock_parse.return_value = Mock(
             bozo=False,
             status=200,
             feed=Mock(title='Test Feed'),
-            entries=[
-                Mock(
-                    title='Test Article 1',
-                    link='http://example.com/1',
-                    id='item1',
-                    published_parsed=time_tuple1,
-                    summary='Summary 1',
-                    description='Description 1'  # Add description too
-                ),
-                Mock(
-                    title='Test Article 2',
-                    link='http://example.com/2',
-                    id='item2',
-                    published_parsed=time_tuple2,
-                    summary='Summary 2',
-                    description='Description 2'
-                )
-            ]
+            entries=[entry1, entry2]
         )
         # Add get method to the mock
         mock_parse.return_value.get = lambda key, default=None: getattr(mock_parse.return_value, key, default) if hasattr(mock_parse.return_value, key) else default
+        mock_parse.return_value.feed.get = lambda key, default=None: getattr(mock_parse.return_value.feed, key, default) if hasattr(mock_parse.return_value.feed, key) else default
         
         items = fetch_rss(
             'http://example.com/feed.xml',

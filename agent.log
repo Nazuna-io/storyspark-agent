@@ -12929,3 +12929,61 @@ Format the output clearly under these headings. Make the Logline concise and int
 2025-05-13 05:13:54,037 - __main__ - INFO - Appended 3 new seeds. Total seeds: 24.
 2025-05-13 05:13:54,037 - __main__ - INFO - Successfully saved 24 seeds to Markdown: story_sparks.md
 2025-05-13 05:13:54,037 - __main__ - INFO - Scheduler started. Waiting for next cycle...
+2025-05-13 06:11:02,811 - src.main - INFO - StorySpark Agent started.
+2025-05-13 06:11:02,811 - src.main - INFO - Loaded configuration from config.yaml.
+2025-05-13 06:11:02,811 - src.main - INFO - Loading previous state...
+2025-05-13 06:11:02,811 - src.data_fetcher - INFO - Fetcher state loaded successfully from 'data/fetcher_state.json'
+2025-05-13 06:11:02,819 - src.main - DEBUG - Successfully loaded data from data/history_items.json
+2025-05-13 06:11:02,819 - src.main - DEBUG - Successfully loaded data from data/generated_seeds.json
+2025-05-13 06:11:02,819 - src.main - INFO - Loaded 1100 history items and 24 previously generated seeds.
+2025-05-13 06:11:02,819 - src.main - DEBUG - Initial fetcher timestamps: {'reddit_futurology': datetime.datetime(2025, 5, 13, 2, 50, 50, tzinfo=datetime.timezone.utc)}
+2025-05-13 06:11:02,819 - src.main - INFO - Writing 24 existing seeds to Markdown: story_sparks.md
+2025-05-13 06:11:02,820 - src.main - INFO - Successfully saved 24 seeds to Markdown: story_sparks.md
+2025-05-13 06:11:02,820 - src.main - INFO - Agent cycle scheduled to run every 60 minutes.
+2025-05-13 06:11:02,820 - src.main - INFO - Running initial agent cycle immediately upon start...
+2025-05-13 06:11:02,820 - src.main - INFO - Scheduler triggered agent cycle.
+2025-05-13 06:11:02,820 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 06:11:02,820 - src.main - INFO - Fetching new items...
+2025-05-13 06:11:02,820 - src.data_fetcher - INFO - Fetching Subreddit JSON: r/futurology from https://www.reddit.com/r/futurology/new.json?limit=100
+2025-05-13 06:11:02,821 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.reddit.com:443
+2025-05-13 06:11:03,695 - urllib3.connectionpool - DEBUG - https://www.reddit.com:443 "GET /r/futurology/new.json?limit=100 HTTP/1.1" 200 91523
+2025-05-13 06:11:03,761 - src.data_fetcher - DEBUG - Reached post older than last timestamp in r/futurology. Stopping iteration for this source.
+2025-05-13 06:11:03,761 - src.data_fetcher - INFO - Fetched 1 new items from r/futurology
+2025-05-13 06:11:03,761 - src.data_fetcher - INFO - Total new items fetched across all sources: 1
+2025-05-13 06:11:03,762 - src.main - INFO - History contains 1101 items (after update/purge). Using 1100 for baseline comparison.
+2025-05-13 06:11:03,762 - src.main - INFO - Detecting sparks...
+2025-05-13 06:11:03,762 - src.trend_detector - INFO - Analyzing 1 new items against 1100 history items for sparks.
+2025-05-13 06:11:03,792 - src.trend_detector - DEBUG - New item keyword counts (Top 10): [('gente', 1), ('soy', 1), ('nuevo', 1), ('alguna', 1), ('recomendación', 1), ('visto', 1), ('mucho', 1), ('sobre', 1), ('app', 1), ('parece', 1)]
+2025-05-13 06:11:03,793 - src.trend_detector - DEBUG - History keyword counts (Top 10): [('like', 363), ('more', 363), ('future', 308), ('people', 253), ('human', 209), ('all', 198), ('could', 198), ('would', 187), ('there', 187), ('just', 176)]
+2025-05-13 06:11:03,793 - src.trend_detector - INFO - Detected 0 sparks in this cycle.
+2025-05-13 06:11:03,793 - src.main - INFO - No sparks detected in this cycle.
+2025-05-13 06:11:03,793 - src.main - INFO - --- Agent Cycle Complete (No sparks) ---
+2025-05-13 06:11:03,793 - src.data_fetcher - DEBUG - Fetcher state saved to 'data/fetcher_state.json'
+2025-05-13 06:11:03,814 - src.main - DEBUG - Successfully saved data to data/history_items.json
+2025-05-13 06:11:03,814 - src.main - INFO - Scheduler started. Waiting for next cycle...
+2025-05-13 06:11:41,083 - src.main - INFO - StorySpark Agent started.
+2025-05-13 06:11:41,083 - src.main - INFO - Loaded configuration from config.yaml.
+2025-05-13 06:11:41,083 - src.main - INFO - Loading previous state...
+2025-05-13 06:11:41,083 - src.data_fetcher - INFO - Fetcher state loaded successfully from 'data/fetcher_state.json'
+2025-05-13 06:11:41,091 - src.main - DEBUG - Successfully loaded data from data/history_items.json
+2025-05-13 06:11:41,091 - src.main - DEBUG - Successfully loaded data from data/generated_seeds.json
+2025-05-13 06:11:41,091 - src.main - INFO - Loaded 1101 history items and 24 previously generated seeds.
+2025-05-13 06:11:41,091 - src.main - DEBUG - Initial fetcher timestamps: {'reddit_futurology': datetime.datetime(2025, 5, 13, 6, 10, 35, tzinfo=datetime.timezone.utc)}
+2025-05-13 06:11:41,091 - src.main - INFO - Writing 24 existing seeds to Markdown: story_sparks.md
+2025-05-13 06:11:41,092 - src.main - INFO - Successfully saved 24 seeds to Markdown: story_sparks.md
+2025-05-13 06:11:41,092 - src.main - INFO - Agent cycle scheduled to run every 60 minutes.
+2025-05-13 06:11:41,092 - src.main - INFO - Running initial agent cycle immediately upon start...
+2025-05-13 06:11:41,092 - src.main - INFO - Scheduler triggered agent cycle.
+2025-05-13 06:11:41,092 - src.main - INFO - --- Starting Agent Cycle ---
+2025-05-13 06:11:41,092 - src.main - INFO - Fetching new items...
+2025-05-13 06:11:41,092 - src.data_fetcher - INFO - Fetching Subreddit JSON: r/futurology from https://www.reddit.com/r/futurology/new.json?limit=100
+2025-05-13 06:11:41,093 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.reddit.com:443
+2025-05-13 06:11:41,886 - urllib3.connectionpool - DEBUG - https://www.reddit.com:443 "GET /r/futurology/new.json?limit=100 HTTP/1.1" 200 91539
+2025-05-13 06:11:41,951 - src.data_fetcher - DEBUG - Reached post older than last timestamp in r/futurology. Stopping iteration for this source.
+2025-05-13 06:11:41,951 - src.data_fetcher - INFO - Fetched 0 new items from r/futurology
+2025-05-13 06:11:41,951 - src.data_fetcher - INFO - Total new items fetched across all sources: 0
+2025-05-13 06:11:41,951 - src.main - INFO - No new items fetched in this cycle.
+2025-05-13 06:11:41,951 - src.main - INFO - --- Agent Cycle Complete (No new items) ---
+2025-05-13 06:11:41,951 - src.data_fetcher - DEBUG - Fetcher state saved to 'data/fetcher_state.json'
+2025-05-13 06:11:41,972 - src.main - DEBUG - Successfully saved data to data/history_items.json
+2025-05-13 06:11:41,972 - src.main - INFO - Scheduler started. Waiting for next cycle...

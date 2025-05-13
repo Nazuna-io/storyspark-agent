@@ -224,9 +224,11 @@ def fetch_rss(feed_url: str, last_timestamp: Optional[datetime]) -> List[Fetched
 
             content_snippet = entry.get('summary', entry.get('description', ''))
             # Basic HTML tag removal (very rudimentary, consider BeautifulSoup later if needed)
-            if content_snippet:
+            if content_snippet and isinstance(content_snippet, str):
                 import re
                 content_snippet = re.sub('<[^<]+?>', '', content_snippet).strip()
+            else:
+                content_snippet = ''
 
             title = entry.get('title', 'No Title')
             link = entry.get('link') # May be None

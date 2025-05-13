@@ -1,4 +1,4 @@
-# SparkStory Agent
+# StorySpark Agent
 
 An AI-powered agent that monitors Reddit and RSS feeds for trending topics ("sparks") and generates story ideas using Google's Gemini AI.
 
@@ -15,7 +15,7 @@ An AI-powered agent that monitors Reddit and RSS feeds for trending topics ("spa
 1. **Clone the repository**:
    ```bash
    git clone git@github.com:Nazuna-io/storyspark-agent.git
-   cd sparkstory-agent
+   cd storyspark-agent
    ```
 
 2. **Set up Python environment**:
@@ -72,7 +72,7 @@ The agent is configured via `config.yaml`:
 pytest -v --cov=src --cov-report=term-missing
 ```
 
-Current test coverage: 72%
+Current test coverage: 83%
 
 ### Code Structure
 
@@ -92,6 +92,40 @@ src/
 - All external API calls have error handling
 - Rate limiting is respected for Reddit API
 - See `SECURITY_REVIEW.md` for detailed analysis
+
+### Dependency Scanning
+
+The project uses `pip-audit` for dependency vulnerability scanning:
+
+```bash
+pip-audit
+```
+
+### Pre-commit Hooks
+
+This project uses pre-commit hooks to ensure code quality:
+
+```bash
+# Install pre-commit
+pip install pre-commit
+
+# Set up the git hook scripts
+pre-commit install
+
+# Run against all files
+pre-commit run --all-files
+```
+
+The pre-commit configuration includes:
+- Code formatting (black)
+- Import sorting (isort)
+- Linting (flake8)
+- Type checking (mypy)
+- Security checks (bandit)
+
+### Deployment
+
+See the [Deployment Guide](DEPLOYMENT.md) for instructions on deploying the StorySpark Agent to production environments.
 
 ## Example Output
 
