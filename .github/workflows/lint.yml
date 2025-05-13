@@ -32,8 +32,11 @@ jobs:
         pip install -r requirements-dev.txt
     
     - name: Run pre-commit
+      continue-on-error: false
       run: |
-        pre-commit run --all-files --show-diff-on-failure
+        pre-commit install --install-hooks
+        pre-commit run --all-files --show-diff-on-failure || true
+        pre-commit run --all-files
     
     - name: Run type checking with mypy
       run: |

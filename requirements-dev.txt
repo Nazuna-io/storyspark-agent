@@ -11,3 +11,4 @@ types-PyYAML==6.0.12
 # Testing dependencies (duplicated from requirements.txt for clarity)
 pytest==7.4.4
 pytest-cov==4.1.0
+pytest-timeout==2.2.0

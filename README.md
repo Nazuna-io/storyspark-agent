@@ -43,6 +43,8 @@ An AI-powered agent that monitors Reddit and RSS feeds for trending topics ("spa
 
 5. **Run the agent**:
    ```bash
+   python run.py
+   # Or directly:
    python src/main.py
    ```
 
@@ -125,7 +127,6 @@ src/
 - API keys are stored in environment variables
 - All external API calls have error handling
 - Rate limiting is respected for Reddit API
-- See `SECURITY_REVIEW.md` for detailed analysis
 
 ### Dependency Scanning
 
