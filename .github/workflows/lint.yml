@@ -35,9 +35,8 @@ jobs:
       continue-on-error: false
       run: |
         pre-commit install --install-hooks
-        pre-commit run --all-files --show-diff-on-failure || true
         pre-commit run --all-files
     
     - name: Run type checking with mypy
       run: |
-        mypy src/ --ignore-missing-imports
+        mypy src/ --config-file pyproject.toml
